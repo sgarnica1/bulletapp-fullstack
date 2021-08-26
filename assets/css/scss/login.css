@@ -184,9 +184,8 @@ body {
 }
 
 .login__container .login__privacy {
+  margin-bottom: -0.625rem;
   color: #767676;
-  position: absolute;
-  bottom: 20px;
 }
 
 .login__container .login__privacy:hover {
@@ -261,9 +260,6 @@ button {
 }
 
 @media (max-width: 600px) {
-  .login__container .login__header .header__logo {
-    max-width: 10rem;
-  }
   .login__container .login__header .header__title {
     font-size: 1.625rem;
   }

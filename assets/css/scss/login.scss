@@ -130,9 +130,8 @@ body {
   }
 
   .login__privacy {
+    margin-bottom: toRem(-10);
     color: $color-alternative-2;
-    position: absolute;
-    bottom: 20px;
   }
 
   .login__privacy:hover {
