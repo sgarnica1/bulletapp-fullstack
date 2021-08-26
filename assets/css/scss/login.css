@@ -74,7 +74,6 @@ body {
 }
 
 .login__container {
-  min-height: 100vh;
   padding: 1.5625rem;
   padding-top: 3.125rem;
   position: relative;
@@ -261,6 +260,7 @@ button {
   }
   .login__container {
     padding-top: 0rem;
+    min-height: 100vh;
   }
 }
 
