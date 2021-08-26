@@ -1,0 +1,74 @@
+@import "./config";
+@import "./global";
+
+.nav {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 65px;
+  background-color: $color-background;
+
+  &__toggler {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: $color-background;
+
+    .toggler__icon {
+      width: 25px;
+      height: 25px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      background: url("../../icon/hamburger.svg");
+    }
+  }
+  &__container {
+    padding: 0;
+    gap: toRem(20);
+
+    .nav__element {
+      .current-date {
+        display: none;
+      }
+
+      .nav__user {
+        .nav__user--profile {
+          width: toRem(40);
+          height: toRem(40);
+          border-radius: 50%;
+          font-weight: 600;
+          background: $color-secondary;
+        }
+
+        .nav__user--info {
+          button:focus {
+            outline: none;
+            box-shadow: none !important;
+          }
+          button:focus-visible {
+            box-shadow: $focus-box-shadow !important;
+          }
+
+          .dropdown-menu {
+            a:hover {
+              color: $color-primary;
+              background-color: $color-background;
+            }
+          }
+          .dropdown-menu.show {
+            transform: none !important;
+            left: -70px !important;
+            top: 40px !important;
+          }
+        }
+      }
+    }
+    // .nav__divider--vertical {
+    //   display: none;
+    // }
+  }
+}

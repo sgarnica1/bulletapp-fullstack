@@ -1,11 +1,11 @@
 *:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px #fff;
-  border-radius: 2px;
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
 }
 
 input:focus-visible {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 body {
@@ -21,5 +21,144 @@ button {
   cursor: pointer;
   transition: ease 0.3s;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 65px;
+  background-color: #f5f5f5;
+}
+
+.nav__toggler {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+
+.nav__toggler .toggler__icon {
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background: url("../../icon/hamburger.svg");
+}
+
+.nav__container {
+  padding: 0;
+  gap: 1.25rem;
+}
+
+.nav__container .nav__element .current-date {
+  display: none;
+}
+
+.nav__container .nav__element .nav__user .nav__user--profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-weight: 600;
+  background: #ade014;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info button:focus-visible {
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5) !important;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info .dropdown-menu a:hover {
+  color: #4e4e4e;
+  background-color: #f5f5f5;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info .dropdown-menu.show {
+  transform: none !important;
+  left: -70px !important;
+  top: 40px !important;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  .nav__container .nav__element .current-date {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+  }
+  .nav__container .nav__divider--vertical {
+    width: 0;
+    border-right: 1px solid #767676;
+    height: calc(4.375rem - 2rem);
+    margin: auto 0.625rem;
+  }
 }
 /*# sourceMappingURL=dashboard.css.map */

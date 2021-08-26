@@ -35,13 +35,13 @@
 }
 
 *:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px #fff;
-  border-radius: 2px;
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
 }
 
 input:focus-visible {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 body {
@@ -57,6 +57,10 @@ button {
   cursor: pointer;
   transition: ease 0.3s;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -142,7 +146,7 @@ body {
 .login__container .login__form .login__input--container .login__input input:-webkit-autofill:focus,
 .login__container .login__form .login__input--container .login__input input:-webkit-autofill:hover {
   -webkit-text-fill-color: #fff;
-  -webkit-box-shadow: 0 0 0 1000px #000 inset;
+  -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
 }
 
 .login__container .login__form .login__input--container .login__input .password--toggle {
@@ -212,13 +216,13 @@ body {
 }
 
 *:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px #fff;
-  border-radius: 2px;
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
 }
 
 input:focus-visible {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 body {
@@ -234,6 +238,10 @@ button {
   cursor: pointer;
   transition: ease 0.3s;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .login__container .login__form .login__button--container .login__submit, .login__container .login__form .login__button--container .button__submit--fake {
