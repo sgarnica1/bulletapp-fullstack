@@ -76,6 +76,7 @@ body {
 .login__container {
   min-height: 100vh;
   padding: 1.5625rem;
+  padding-top: 3.125rem;
   position: relative;
 }
 
@@ -184,7 +185,8 @@ body {
 }
 
 .login__container .login__privacy {
-  margin-bottom: -0.625rem;
+  position: absolute;
+  bottom: 20px;
   color: #767676;
 }
 
@@ -257,9 +259,15 @@ button {
   .login__background {
     display: unset;
   }
+  .login__container {
+    padding-top: 0rem;
+  }
 }
 
 @media (max-width: 600px) {
+  .login__container .login__header .header__logo {
+    max-width: 10rem;
+  }
   .login__container .login__header .header__title {
     font-size: 1.625rem;
   }
