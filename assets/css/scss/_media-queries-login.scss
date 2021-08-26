@@ -1,0 +1,18 @@
+@import "./config";
+@import "./global";
+
+@media (min-width: 992px) {
+  .login__background {
+    display: unset;
+  }
+}
+@media (max-width: 600px) {
+  .login__container .login__header {
+    .header__logo {
+      max-width: toRem(160);
+    }
+    .header__title {
+      font-size: toRem(26);
+    }
+  }
+}

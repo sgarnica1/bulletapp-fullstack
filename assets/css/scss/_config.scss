@@ -1,0 +1,27 @@
+@import "./global";
+
+// CONFIG
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px $color-light;
+  border-radius: 2px;
+}
+input:focus-visible {
+  box-shadow: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
