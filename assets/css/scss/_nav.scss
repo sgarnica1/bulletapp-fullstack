@@ -1,6 +1,15 @@
 @import "./config";
 @import "./global";
 
+.sidebar {
+  max-width: toRem(250);
+  background-color: $color-dark;
+  &__navigation {
+    position: sticky;
+    top: 0;
+  }
+}
+
 .nav {
   position: sticky;
   left: 0;

@@ -56,6 +56,16 @@ ul {
   list-style: none;
 }
 
+.sidebar {
+  max-width: 15.625rem;
+  background-color: #000;
+}
+
+.sidebar__navigation {
+  position: sticky;
+  top: 0;
+}
+
 .nav {
   position: sticky;
   left: 0;
