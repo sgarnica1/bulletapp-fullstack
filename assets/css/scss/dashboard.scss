@@ -1,6 +1,7 @@
 @import "./global";
 @import "./config";
-@import "./nav";
+@import "./dashboard/nav";
+@import "./dashboard/content";
 
 .wrapper {
   display: grid;

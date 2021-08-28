@@ -23,4 +23,23 @@
       }
     }
   }
+
+  .banner .banner__intro {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+}
+
+@media (min-width: 668px) {
+  .banner {
+    &__intro {
+      .banner__filter {
+        form {
+          .form__filter__button {
+            width: toRem(50);
+          }
+        }
+      }
+    }
+  }
 }

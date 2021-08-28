@@ -31,11 +31,11 @@
   <div class="wrapper">
     <!-- SIDEBAR -->
     <aside class=" sidebar d-none d-lg-flex ">
-      <nav class=" navbar sidebar__navigation d-flex flex-column align-items-center justify-content-start">
-        <div class="sidebar__logo">
+      <nav class=" navbar sidebar__navigation d-grid align-items-start justify-items-center">
+        <div class="sidebar__logo d-flex justify-content-center align-items-center">
           <img src="./assets/img/logo/logo_white_resized.png" alt="Logo Bullet CrossFit">
         </div>
-        <div class="sidebar__divider--horizontal"></div>
+
         <div class="navlist__wrapper">
           <ul class="sidebar__navlist">
             <li class="navlist__item active">
@@ -116,8 +116,32 @@
 
       <!-- MAIN CONTENT -->
       <main class="content__main">
-        <div style="width: 100%; height: 2000px; background: linear-gradient(#f5f5f5, #DEDEDE)">
-        </div>
+        <section class="banner  pt-3 pb-4 px-4 px-md-5">
+          <div class="banner__intro">
+            <div class="banner__welcome">
+              <h1 class="banner__user fw-bold mb-3">Bienvenido <span class="banner__username">Sergio</span></h1>
+              <p>Resumen mensual</p>
+            </div>
+            <div class="banner__filter">
+              <form action="" class="form__filter d-flex flex-row flex-wrap">
+                <div class="input__container">
+                  <span class="input__icon location"></span>
+                  <select name="filter-location" id="filter-location" class="input__element">
+                    <option value="juriquilla">Juriquilla</option>
+                    <option value="zibata">Zibatá</option>
+                    <option value="grand-reserva">Grand Reserva</option>
+                  </select>
+                </div>
+                <div class="input__container">
+                  <span class="input__icon calendar"></span>
+                  <input type="month" id="filter-month" name="filter-month" value="">
+                </div>
+                <button type="submit" class="form__filter__button"><span></span></button>
+              </form>
+            </div>
+          </div>
+          <div class="banner__statistics"></div>
+        </section>
       </main>
 
     </div>
