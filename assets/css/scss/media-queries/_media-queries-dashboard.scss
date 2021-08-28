@@ -1,0 +1,45 @@
+@import "../config";
+@import "../global";
+
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 18% 82%;
+  }
+
+  .nav {
+    &__container {
+      .nav__element {
+        .current-date {
+          display: inline-block;
+          font-family: $font-secondary;
+        }
+      }
+      .nav__divider--vertical {
+        // display: block;
+        width: 0;
+        border-right: 1px solid $color-alternative-2;
+        height: calc(4.375rem - 2rem);
+        margin: auto toRem(10);
+      }
+    }
+  }
+
+  .banner .banner__intro {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+}
+
+@media (min-width: 668px) {
+  .banner {
+    &__intro {
+      .banner__filter {
+        form {
+          .form__filter__button {
+            width: toRem(50);
+          }
+        }
+      }
+    }
+  }
+}

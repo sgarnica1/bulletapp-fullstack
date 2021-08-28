@@ -1,0 +1,422 @@
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.sidebar {
+  background-color: #000;
+}
+
+.sidebar__navigation {
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 85%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 1.875rem 1.25rem 0.625rem 1.25rem;
+}
+
+.sidebar__navigation .sidebar__logo {
+  border-bottom: 1px solid #767676;
+}
+
+.sidebar__navigation .sidebar__logo img {
+  width: 100%;
+  max-width: 9.375rem;
+  margin-bottom: 1.5625rem;
+}
+
+.sidebar__navigation .navlist__wrapper {
+  height: 92%;
+  width: 100%;
+  margin-top: 25px;
+  padding-right: 0.625rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar__navigation .navlist__wrapper::-webkit-scrollbar {
+  cursor: pointer;
+  width: 3px;
+  height: 8px;
+}
+
+.sidebar__navigation .navlist__wrapper::-webkit-scrollbar-thumb {
+  background: #93bb1c;
+  border-radius: 6px;
+}
+
+.sidebar__navigation .sidebar__navlist {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3.75rem;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item a {
+  letter-spacing: 0.0625rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item a:hover {
+  color: #ade014;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.active a {
+  color: #93bb1c;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-top: 2.8125rem;
+  color: #a7a7a7;
+}
+
+.nav {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 65px;
+  background-color: #f5f5f5;
+}
+
+.nav__toggler {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+
+.nav__toggler .toggler__icon {
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background: url("../../icon/hamburger.svg");
+}
+
+.nav__container {
+  padding: 0;
+  gap: 1.25rem;
+}
+
+.nav__container .nav__element .current-date {
+  display: none;
+}
+
+.nav__container .nav__element .nav__user .nav__user--profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-weight: 600;
+  background: #93bb1c;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info button:focus-visible {
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5) !important;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info .dropdown-menu a:hover {
+  color: #4e4e4e;
+  background-color: #f5f5f5;
+}
+
+.nav__container .nav__element .nav__user .nav__user--info .dropdown-menu.show {
+  transform: none !important;
+  left: -70px !important;
+  top: 40px !important;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.banner {
+  min-height: 12.5rem;
+  background: linear-gradient(#f5f5f5, #dedede);
+}
+
+.banner__intro {
+  display: block;
+}
+
+.banner__intro .banner__welcome .banner__user {
+  font-size: 2.25rem;
+  color: #4e4e4e;
+}
+
+.banner__intro .banner__welcome p {
+  margin-bottom: 1.875rem;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  color: #767676;
+}
+
+.banner__intro .banner__filter form .input__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  margin-bottom: 0.9375rem;
+  margin-right: 1.25rem;
+  background-color: #fff;
+}
+
+.banner__intro .banner__filter form .input__container .input__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  left: 0.75rem;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.banner__intro .banner__filter form .input__container .input__icon.location {
+  background: url("../../icon/location.svg");
+}
+
+.banner__intro .banner__filter form .input__container .input__icon.calendar {
+  background: url("../../icon/calendar.svg");
+}
+
+.banner__intro .banner__filter form .input__container select,
+.banner__intro .banner__filter form .input__container input {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 2.5rem;
+  margin-right: 0.75rem;
+  border-radius: 6px;
+}
+
+.banner__intro .banner__filter form .form__filter__button {
+  height: 3.125rem;
+  width: 15.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #93bb1c;
+}
+
+.banner__intro .banner__filter form .form__filter__button span {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../icon/right-arrow.svg");
+}
+
+.banner__intro .banner__filter form .form__filter__button:hover {
+  background-color: #ade014;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 18% 82%;
+  }
+  .nav__container .nav__element .current-date {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+  }
+  .nav__container .nav__divider--vertical {
+    width: 0;
+    border-right: 1px solid #767676;
+    height: calc(4.375rem - 2rem);
+    margin: auto 0.625rem;
+  }
+  .banner .banner__intro {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+}
+
+@media (min-width: 668px) {
+  .banner__intro .banner__filter form .form__filter__button {
+    width: 3.125rem;
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */

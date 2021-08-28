@@ -3,12 +3,12 @@
 // CONFIG
 
 *:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px $color-light;
-  border-radius: 2px;
+  outline: none !important;
+  box-shadow: $focus-box-shadow;
+  border-radius: 2px !important;
 }
 input:focus-visible {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 body {
@@ -17,6 +17,13 @@ body {
   box-sizing: border-box;
   font-family: $font-primary;
 }
+body::-webkit-scrollbar {
+  width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  background: $color-primary;
+  border-radius: 6px;
+}
 
 label,
 a,
@@ -24,4 +31,8 @@ button {
   cursor: pointer;
   transition: ease 0.3s;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
