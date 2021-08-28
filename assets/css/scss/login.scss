@@ -82,7 +82,7 @@ body {
         input:-webkit-autofill:focus,
         input:-webkit-autofill:hover {
           -webkit-text-fill-color: #fff;
-          -webkit-box-shadow: 0 0 0 1000px #000 inset;
+          -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
         }
 
         .password--toggle {
@@ -142,4 +142,4 @@ body {
 }
 
 // MEDIA QUERIES
-@import "./media-queries-login";
+@import "./media-queries/media-queries-login";
