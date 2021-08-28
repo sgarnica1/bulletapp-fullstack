@@ -15,6 +15,15 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
 label,
 a,
 button {
@@ -44,6 +53,15 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
 label,
 a,
 button {
@@ -57,13 +75,86 @@ ul {
 }
 
 .sidebar {
-  max-width: 15.625rem;
   background-color: #000;
 }
 
 .sidebar__navigation {
   position: sticky;
   top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 1.875rem 1.25rem 0.625rem 1.25rem;
+}
+
+.sidebar__navigation .sidebar__logo img {
+  width: 100%;
+  max-width: 9.375rem;
+  margin-bottom: 1.5625rem;
+}
+
+.sidebar__navigation .sidebar__divider--horizontal {
+  height: 0;
+  width: 100%;
+  border-top: 1px solid #767676;
+  margin-bottom: 0.625rem;
+}
+
+.sidebar__navigation .navlist__wrapper {
+  height: 80%;
+  width: 100%;
+  padding-right: 0.625rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar__navigation .navlist__wrapper::-webkit-scrollbar {
+  cursor: pointer;
+  width: 3px;
+  height: 8px;
+}
+
+.sidebar__navigation .navlist__wrapper::-webkit-scrollbar-thumb {
+  background: #93bb1c;
+  border-radius: 6px;
+}
+
+.sidebar__navigation .sidebar__navlist {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3.75rem;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item a {
+  letter-spacing: 0.0625rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item a:hover {
+  color: #ade014;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.active a {
+  color: #93bb1c;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-top: 2.8125rem;
+  color: #a7a7a7;
 }
 
 .nav {
@@ -107,7 +198,7 @@ ul {
   height: 2.5rem;
   border-radius: 50%;
   font-weight: 600;
-  background: #ade014;
+  background: #93bb1c;
 }
 
 .nav__container .nav__element .nav__user .nav__user--info button:focus {
@@ -130,6 +221,11 @@ ul {
   top: 40px !important;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
 *:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
@@ -147,6 +243,15 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
 label,
 a,
 button {
@@ -160,6 +265,9 @@ ul {
 }
 
 @media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 18% 82%;
+  }
   .nav__container .nav__element .current-date {
     display: inline-block;
     font-family: "Roboto", sans-serif;

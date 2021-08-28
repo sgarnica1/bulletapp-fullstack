@@ -17,6 +17,13 @@ body {
   box-sizing: border-box;
   font-family: $font-primary;
 }
+body::-webkit-scrollbar {
+  width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  background: $color-primary;
+  border-radius: 6px;
+}
 
 label,
 a,

@@ -1,4 +1,11 @@
 @import "./global";
 @import "./config";
 @import "./nav";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+// MEDIA QUERIES
 @import "./media-queries/media-queries-dashboard";
