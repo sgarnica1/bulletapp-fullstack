@@ -1,6 +1,41 @@
 @import "../config";
 @import "../global";
 
+@media (min-width: 550px) {
+  .banner {
+    .banner__statistics {
+      display: grid;
+      grid-template-columns: repeat(2, toRem(250));
+      gap: toRem(20);
+
+      .statistics__card {
+        max-width: toRem(250);
+      }
+      .form__filter__button {
+        width: toRem(50);
+      }
+    }
+
+    .banner__filter form .form__filter__button {
+      width: toRem(50);
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  .banner {
+    &__intro {
+      .banner__filter {
+        form {
+          .form__filter__button {
+            width: toRem(50);
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .wrapper {
     grid-template-columns: 18% 82%;
@@ -14,31 +49,35 @@
           font-family: $font-secondary;
         }
       }
-      .nav__divider--vertical {
-        // display: block;
-        width: 0;
-        border-right: 1px solid $color-alternative-2;
-        height: calc(4.375rem - 2rem);
-        margin: auto toRem(10);
-      }
     }
   }
 
   .banner .banner__intro {
-    display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 45% 55%;
+  }
+  .banner .banner__intro .banner__filter {
+    max-width: toRem(350);
+    justify-self: self-end;
   }
 }
 
-@media (min-width: 668px) {
+@media (min-width: 1302px) {
   .banner {
-    &__intro {
+    .banner__intro {
+      grid-template-columns: 35% 65%;
+
       .banner__filter {
-        form {
-          .form__filter__button {
-            width: toRem(50);
-          }
-        }
+        max-width: toRem(650);
+        justify-self: self-end;
+      }
+    }
+
+    .banner__statistics {
+      display: grid;
+      grid-template-columns: repeat(4, toRem(235));
+
+      .statistics__card {
+        max-width: toRem(235);
       }
     }
   }

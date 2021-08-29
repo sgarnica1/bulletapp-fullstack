@@ -87,6 +87,7 @@
   top: 0;
   min-height: 65px;
   background-color: $color-background;
+  z-index: 999;
 
   &__toggler {
     cursor: pointer;
