@@ -1,0 +1,63 @@
+@import "../config";
+@import "../global";
+
+main {
+  background: $color-background;
+}
+
+.main-content__wrapper {
+  padding-top: toRem(100);
+}
+
+.athletes__container {
+  grid-template-columns: 53% 45%;
+  gap: 20px;
+}
+
+.info-card {
+  @extend %info-card;
+
+  &__banner {
+    @extend %card-header;
+  }
+  &__header {
+    border-radius: 6px 6px 0 0;
+  }
+  &__footer {
+    border-radius: 0 0 6px 6px;
+  }
+
+  &__below-header {
+    padding: toRem(5) toRem(10);
+    background-color: $color-background;
+  }
+
+  &__info-layout {
+    @extend %card-athlete-layout-payments;
+  }
+
+  &__athletes {
+    height: toRem(300);
+    overflow-y: scroll;
+  }
+  &__athletes::-webkit-scrollbar {
+    height: 6px;
+    width: 4px;
+  }
+  &__athletes::-webkit-scrollbar-thumb {
+    background-color: $color-alternative-2;
+    border-radius: 6px;
+  }
+  &__athlete {
+    padding: 0;
+    margin: toRem(5) toRem(10);
+    border-bottom: 1px solid #dedede;
+  }
+  &__athlete:last-of-type {
+    border-bottom: 0;
+  }
+
+  &__athlete--class {
+    @extend %card-athlete-layout-general;
+  }
+}

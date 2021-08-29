@@ -74,10 +74,11 @@
 
     .banner__statistics {
       display: grid;
-      grid-template-columns: repeat(4, toRem(235));
+      grid-template-columns: repeat(4, 1fr);
 
       .statistics__card {
         max-width: toRem(235);
+        height: toRem(100);
       }
     }
   }
