@@ -593,7 +593,7 @@ ul {
 .sidebar {
   position: fixed;
   width: 80%;
-  max-width: 15.625rem;
+  max-width: 21.875rem;
   background-color: #000;
   z-index: 9999;
   transform: translateX(-100%);
