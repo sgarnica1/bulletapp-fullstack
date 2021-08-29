@@ -1,4 +1,4 @@
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -217,270 +217,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
-  display: inline-block;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: contain !important;
-}
-
-.banner__statistics .statistics__card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.25rem;
-  margin-bottom: 1.25rem;
-  height: 7.1875rem;
-  width: 100%;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: ease 0.5s;
-  transform: translateY(0px);
-  cursor: pointer;
-}
-
-.banner__statistics .statistics__card:hover {
-  transform: translateY(-5px);
-  transition: ease 0.5s;
-  box-shadow: 0px 4px 4px #93bb1c;
-}
-
-.info-card {
-  border-radius: 6px;
-  margin-bottom: 2.1875rem;
-  background: #fff;
-  height: 25rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.info-card__banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(to left, #86aa19, #93bb1c);
-  height: 3.125rem;
-  padding: 0.3125rem 0.625rem;
-}
-
-.info-card__banner .info-card__title {
-  margin-bottom: 0;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-.info-card__banner .info-card__button span {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  background: url("../../icon/right-arrow.svg");
-}
-
-.info-card__banner select {
-  cursor: pointer;
-  border: none;
-  border-radius: 6px;
-  background: none;
-  color: #fff;
-}
-
-.info-card__banner select option {
-  -webkit-appearance: none;
-  color: #4e4e4e;
-  background: #f5f5f5;
-}
-
-.info-card__banner select:focus {
-  background: transparent;
-}
-
-.info-card__athlete--class {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 3.125rem;
-}
-
-.info-card__athlete--class .athlete__name {
-  margin-bottom: 0;
-}
-
-.info-card__athlete--class .athelte__link span {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  background: url("../../icon/right-arrow-dark.svg");
-}
-
-.info-card__info-layout {
-  display: grid;
-  grid-template-columns: 60% 20% 20%;
-  align-items: center;
-  height: 3.125rem;
-}
-
-.info-card__info-layout p {
-  margin-bottom: 0;
-}
-
-.info-card__info-layout .info-card__indicator {
-  color: #000;
-  font-weight: 500;
-  font-size: 0.9375rem;
-  text-transform: uppercase;
-}
-
-.info-card__info-layout .athlete__name-container {
-  width: 90%;
-  overflow-x: hidden;
-}
-
-.info-card__info-layout .athlete__name-container p {
-  width: 18.75rem;
-}
-
-.plans-card__container .plans-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 6px;
-  color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  position: relative;
-  overflow: hidden;
-}
-
-.plans-card__container .plans-card .plans-card__header {
-  width: 100%;
-  height: 3.4375rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #fff;
-}
-
-.plans-card__container .plans-card .plans-card__header .plans-card__title {
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-weight: 1.25rem;
-}
-
-.plans-card__container .plans-card .plans-card__body {
-  height: 7.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.plans-card__container .plans-card .plans-card__body .plans-card__price {
-  font-size: 2.25rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.plans-card__container .plans-card .plans-card__footer {
-  width: 100%;
-  height: 3.4375rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.25rem;
-}
-
-.plans-card__container .plans-card .plans-card__footer-title {
-  margin-bottom: 0;
-  font-size: 1.125rem;
-  font-weight: 300;
-}
-
-.plans-card__container .plans-card .plans-card__footer-stats {
-  color: #93bb1c;
-}
-
-.tools-card__container .tools__card {
-  height: 12.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 6px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: 1;
-  position: relative;
-  gap: 0.9375rem;
-}
-
-.tools-card__container .tools__card .tools__card-title {
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 0;
-  font-size: 1.375rem;
-}
-
-.tools-card__container .tools__card::after {
-  border-radius: 6px;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: -1;
-}
-
-.tools-card__container .tools__card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
-}
-
-*:focus-visible {
-  outline: none !important;
-  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
-}
-
-input:focus-visible {
-  box-shadow: none !important;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  width: 4px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #4e4e4e;
-  border-radius: 6px;
-}
-
-label,
-a,
-button {
-  cursor: pointer;
-  transition: ease 0.3s;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.nav,
-.banner,
-.main-content__wrapper {
-  max-width: 1450px;
-}
-
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -743,7 +480,270 @@ ul {
   max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.banner__statistics .statistics__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  margin-bottom: 1.25rem;
+  height: 7.1875rem;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: ease 0.5s;
+  transform: translateY(0px);
+  cursor: pointer;
+}
+
+.banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
+  transition: ease 0.5s;
+  box-shadow: 0px 4px 4px #93bb1c;
+}
+
+.info-card {
+  border-radius: 6px;
+  margin-bottom: 2.1875rem;
+  background: #fff;
+  height: 25rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info-card__banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left, #86aa19, #93bb1c);
+  height: 3.125rem;
+  padding: 0.3125rem 0.625rem;
+}
+
+.info-card__banner .info-card__title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.info-card__banner .info-card__button span {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background: url("../../icon/right-arrow.svg");
+}
+
+.info-card__banner select {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: #fff;
+}
+
+.info-card__banner select option {
+  -webkit-appearance: none;
+  color: #4e4e4e;
+  background: #f5f5f5;
+}
+
+.info-card__banner select:focus {
+  background: transparent;
+}
+
+.info-card__athlete--class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125rem;
+}
+
+.info-card__athlete--class .athlete__name {
+  margin-bottom: 0;
+}
+
+.info-card__athlete--class .athelte__link span {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background: url("../../icon/right-arrow-dark.svg");
+}
+
+.info-card__info-layout {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  align-items: center;
+  height: 3.125rem;
+}
+
+.info-card__info-layout p {
+  margin-bottom: 0;
+}
+
+.info-card__info-layout .info-card__indicator {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+}
+
+.info-card__info-layout .athlete__name-container {
+  width: 90%;
+  overflow-x: hidden;
+}
+
+.info-card__info-layout .athlete__name-container p {
+  width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
+}
+
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1450px;
+}
+
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -985,6 +985,7 @@ ul {
 .sidebar {
   position: fixed;
   width: 80%;
+  max-width: 21.875rem;
   background-color: #000;
   z-index: 9999;
   transform: translateX(-100%);
@@ -1047,19 +1048,91 @@ ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.75rem;
+  min-height: 3.75rem;
+  background: #000;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item .navlist__link, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.0625rem;
+  font-weight: 300;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
   border-bottom: 1px solid #333;
 }
 
-.sidebar__navigation .sidebar__navlist .navlist__item a {
-  letter-spacing: 0.0625rem;
-  font-weight: 300;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+.sidebar__navigation .sidebar__navlist .navlist__item .navlist__link:hover, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn:hover {
+  color: #ade014;
 }
 
-.sidebar__navigation .sidebar__navlist .navlist__item a:hover {
-  color: #ade014;
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn p {
+  margin-bottom: 0;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  background: url("../../icon/dropdown-inactive.svg");
+  height: 0.9375rem;
+  width: 0.9375rem;
+  transform: rotate(0deg);
+  transition: ease 0.5s;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn.show span {
+  transform: rotate(180deg);
+  transition: ease 0.5s;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container {
+  display: none;
+  width: 100%;
+  padding: 0.625rem;
+  background-color: #0d0d0d;
+  border-radius: 0 0 6px 6px;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container .navlist__dropdown-element a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  height: 3.125rem;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container .navlist__dropdown-element.active a {
+  cursor: pointer;
+  text-decoration: line-through;
+  color: #4e4e4e;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container .navlist__dropdown-element.active a:hover {
+  color: #4e4e4e;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container .navlist__dropdown-element a:hover {
+  color: #93bb1c;
+}
+
+.sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container.show {
+  display: block;
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.active a {
@@ -1143,7 +1216,7 @@ ul {
   top: 40px !important;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1406,7 +1479,7 @@ ul {
   max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1749,7 +1822,7 @@ ul {
   background: url("../../icon/right-arrow-dark.svg");
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -2012,7 +2085,7 @@ ul {
   max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -2334,7 +2407,7 @@ main {
   grid-template-columns: 100%;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -2597,7 +2670,7 @@ ul {
   max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -2889,6 +2962,9 @@ ul {
 }
 
 @media (min-width: 1300px) {
+  .sidebar {
+    max-width: 100%;
+  }
   .banner .banner__intro {
     grid-template-columns: 35% 65%;
   }
