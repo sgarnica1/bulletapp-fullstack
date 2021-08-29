@@ -1,6 +1,10 @@
 @import "../config";
 @import "../global";
 
+.content__banner {
+  background: $color-background-linear;
+}
+
 .banner {
   min-height: toRem(200);
   background: $color-background-linear;

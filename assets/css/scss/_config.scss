@@ -36,3 +36,10 @@ button {
 ul {
   list-style: none;
 }
+
+// MAX WIDTH
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1250px;
+}

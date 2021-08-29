@@ -1,7 +1,8 @@
 @import "./global";
 @import "./config";
 @import "./dashboard/nav";
-@import "./dashboard/content";
+@import "./dashboard/banner";
+@import "./dashboard/main-content";
 
 .wrapper {
   display: grid;

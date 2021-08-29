@@ -82,40 +82,43 @@
     <!-- CONTENT WRAPPER -->
     <div class="content">
       <!-- NAVBAR -->
-      <nav class="nav d-flex align-items-center justify-content-between justify-content-lg-end py-2 px-3">
-        <button class="nav__toggler d-flex d-lg-none justify-content-center align-items-center">
-          <span class="toggler__icon">
-          </span>
-        </button>
-        <ul class="nav__container d-flex justify-content-center align-items-center m-0">
-          <li class="nav__element">
-            <span class="current-date">26 Marzo 2021</span>
-          </li>
-          <div class="nav__divider--vertical d-none d-lg-block"></div>
-          <li class="nav__element">
-            <div class="nav__user d-flex justify-content-center align-items-center">
-              <div class="nav__user--profile d-flex justify-content-center align-items-center">
-                <span>S</span>
+      <div class="navbar__wrapper">
+        <nav class="nav d-flex align-items-center justify-content-between justify-content-lg-end py-2 px-3">
+          <button class="nav__toggler d-flex d-lg-none justify-content-center align-items-center">
+            <span class="toggler__icon">
+            </span>
+          </button>
+          <ul class="nav__container d-flex justify-content-center align-items-center m-0">
+            <li class="nav__element">
+              <span class="current-date">26 Marzo 2021</span>
+            </li>
+            <div class="nav__divider--vertical d-none d-lg-block"></div>
+            <li class="nav__element">
+              <div class="nav__user d-flex justify-content-center align-items-center">
+                <div class="nav__user--profile d-flex justify-content-center align-items-center">
+                  <span>S</span>
+                </div>
+                <div class="nav__user--info dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sergio
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                    <li><a class="dropdown-item" href="/">Salir</a></li>
+                  </ul>
+                </div>
               </div>
-              <div class="nav__user--info dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Sergio
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Ajustes</a></li>
-                  <li><a class="dropdown-item" href="/">Salir</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
 
 
-      </nav>
+        </nav>
 
-      <!-- MAIN CONTENT -->
-      <main class="content__main">
+      </div>
+
+      <!-- BANNER -->
+      <div class="content__banner">
         <section class="banner  pt-3 pb-4 px-4 px-md-5">
           <div class="banner__intro d-lg-grid">
             <div class="banner__welcome">
@@ -194,6 +197,164 @@
               </a>
             </article>
           </div>
+        </section>
+      </div>
+
+      <!-- MAIN -->
+      <main>
+        <div class="main-content__wrapper px-4 px-md-5">
+          <section class="athletes__container d-md-grid">
+            <div class="payments info-card">
+              <div class="info-card__banner info-card__header">
+                <h3 class="info-card__title">Pagos Realizados</h3>
+                <a href="#" class="info-card__button">
+                  <span></span>
+                </a>
+              </div>
+              <div class="info-card__below-header info-card__info-layout">
+                <p class="info-card__indicator">Atleta</p>
+                <p class="info-card__indicator">Plan</p>
+                <p class="info-card__indicator">Pago</p>
+              </div>
+              <div class="info-card__athletes">
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Daniel Minguez</p>
+                  </div>
+                  <p class="athlete__plan">3 días</p>
+                  <p class="athelte__payment">$900</p>
+                </div>
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Noah Calleja</p>
+                  </div>
+                  <p class="athlete__plan">5 días</p>
+                  <p class="athelte__payment">$1,100</p>
+                </div>
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Maria Isabel Fraile</p>
+                  </div>
+                  <p class="athlete__plan">3 días</p>
+                  <p class="athelte__payment">$900</p>
+                </div>
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Saul Ferreira</p>
+                  </div>
+                  <p class="athlete__plan">Pareja</p>
+                  <p class="athelte__payment">$1,650</p>
+                </div>
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Juan Sola</p>
+                  </div>
+                  <p class="athlete__plan">3 días</p>
+                  <p class="athelte__payment">$900</p>
+                </div>
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Maria Amparo de Haro</p>
+                  </div>
+                  <p class="athlete__plan">5 días</p>
+                  <p class="athelte__payment">$1,100</p>
+                </div>
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Felix Uriarte</p>
+                  </div>
+                  <p class="athlete__plan">Kids</p>
+                  <p class="athelte__payment">$900</p>
+                </div>
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name">Aurelia Arribas</p>
+                  </div>
+                  <p class="athlete__plan">5 días</p>
+                  <p class="athelte__payment">$1,100</p>
+                </div>
+              </div>
+            </div>
+            <div class="class-athletes info-card">
+              <div class="info-card__banner info-card__header">
+                <h3 class="info-card__title">Atletas por clase</h3>
+                <form action="">
+                  <select name="" id="">
+                    <option value="6:00am">6:00am</option>
+                    <option value="7:30am">7:30am</option>
+                    <option value="8:30am">8:30am</option>
+                    <option value="9:30am">9:30am</option>
+                    <option value="6:00pm">6:00pm</option>
+                    <option value="7:00pm">7:00pm</option>
+                    <option value="8:00pm">8:00pm</option>
+                    <option value="9:00pm">9:00pm</option>
+                  </select>
+                </form>
+              </div>
+              <div class="info-card__athletes">
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Daniel Minguez</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Maria Amparo de Haro</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Aurelia Arribas</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Barbara Cabezas</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Christopher Huerta</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Martina Gallego</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Eloisa Melian</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Cristobal Calatayud</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name">Humberto Amador</p>
+                  <a href="#" class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+              </div>
+              <div class="info-card__banner info-card__footer">
+                <h3 class="info-card__title">Ver clase completa</h3>
+                <a href="#" class="info-card__button">
+                  <span></span>
+                </a>
+              </div>
+            </div>
+        </div>
         </section>
       </main>
 

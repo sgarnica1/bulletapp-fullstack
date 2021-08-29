@@ -72,6 +72,12 @@ ul {
   list-style: none;
 }
 
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1250px;
+}
+
 body {
   background: #000;
 }
@@ -260,6 +266,12 @@ button {
 
 ul {
   list-style: none;
+}
+
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1250px;
 }
 
 .login__container .login__form .login__button--container .login__submit, .login__container .login__form .login__button--container .button__submit--fake {

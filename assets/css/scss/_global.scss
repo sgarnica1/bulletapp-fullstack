@@ -10,6 +10,7 @@ $color-alternative: #a7a7a7;
 $color-alternative-2: #767676;
 $linear-gradient-1: linear-gradient(to left, #0f0f0f, #333333);
 $linear-gradient-2: linear-gradient(to left, #4e4e4e, #333333);
+$linear-gradient-header: linear-gradient(to left, #86aa19, #93bb1c);
 $font-primary: "DM Sans", sans-serif;
 $font-secondary: "Roboto", sans-serif;
 $max-width: 1280px;
@@ -56,7 +57,7 @@ $hover-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   align-items: center;
   padding: 0 toRem(20);
   margin-bottom: toRem(20);
-  height: toRem(100);
+  height: toRem(115);
   width: 100%;
   max-width: toRem(350);
   border-radius: 6px;
@@ -66,8 +67,100 @@ $hover-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: translateY(0px);
   cursor: pointer;
 }
+
 %stats-card:hover {
   // transform: translateY(-10px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px $color-secondary;
+}
+
+%info-card {
+  border-radius: 6px;
+  margin-bottom: toRem(35);
+  background: $color-light;
+  height: toRem(400);
+  box-shadow: $hover-box-shadow;
+}
+
+%card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $linear-gradient-header;
+  height: toRem(50);
+  padding: toRem(5) toRem(10);
+
+  .info-card__title {
+    margin-bottom: 0;
+    font-size: toRem(18);
+    font-weight: 500;
+    color: $color-light;
+  }
+
+  .info-card__button span {
+    width: toRem(15);
+    height: toRem(15);
+    background: url("../../icon/right-arrow.svg");
+    @extend %icon;
+  }
+
+  select {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: none;
+    color: $color-light;
+
+    option {
+      -webkit-appearance: none;
+      color: $color-primary;
+      background: $color-background;
+    }
+  }
+  select:focus {
+    background: transparent;
+  }
+}
+
+%card-athlete-layout-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125rem;
+
+  .athlete__name {
+    margin-bottom: 0;
+  }
+  .athelte__link span {
+    width: toRem(15);
+    height: toRem(15);
+    background: url("../../icon/right-arrow-dark.svg");
+    @extend %icon;
+  }
+}
+
+%card-athlete-layout-payments {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  align-items: center;
+  height: toRem(50);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .info-card__indicator {
+    color: $color-dark;
+    font-weight: 500;
+    font-size: toRem(15);
+    text-transform: uppercase;
+  }
+  .athlete__name-container {
+    width: 90%;
+    overflow-x: hidden;
+
+    p {
+      width: toRem(300);
+    }
+  }
 }
