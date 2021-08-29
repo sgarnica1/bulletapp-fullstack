@@ -1,4 +1,4 @@
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -119,172 +119,7 @@
   width: 18.75rem;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
-  display: inline-block;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: contain !important;
-}
-
-.banner__statistics .statistics__card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.25rem;
-  margin-bottom: 1.25rem;
-  height: 7.1875rem;
-  width: 100%;
-  max-width: 21.875rem;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: ease 0.5s;
-  transform: translateY(0px);
-  cursor: pointer;
-}
-
-.banner__statistics .statistics__card:hover {
-  transition: ease 0.5s;
-  box-shadow: 0px 4px 4px #93bb1c;
-}
-
-.info-card {
-  border-radius: 6px;
-  margin-bottom: 2.1875rem;
-  background: #fff;
-  height: 25rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.info-card__banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(to left, #86aa19, #93bb1c);
-  height: 3.125rem;
-  padding: 0.3125rem 0.625rem;
-}
-
-.info-card__banner .info-card__title {
-  margin-bottom: 0;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-.info-card__banner .info-card__button span {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  background: url("../../icon/right-arrow.svg");
-}
-
-.info-card__banner select {
-  cursor: pointer;
-  border: none;
-  border-radius: 6px;
-  background: none;
-  color: #fff;
-}
-
-.info-card__banner select option {
-  -webkit-appearance: none;
-  color: #4e4e4e;
-  background: #f5f5f5;
-}
-
-.info-card__banner select:focus {
-  background: transparent;
-}
-
-.info-card__athlete--class {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 3.125rem;
-}
-
-.info-card__athlete--class .athlete__name {
-  margin-bottom: 0;
-}
-
-.info-card__athlete--class .athelte__link span {
-  width: 0.9375rem;
-  height: 0.9375rem;
-  background: url("../../icon/right-arrow-dark.svg");
-}
-
-.info-card__info-layout {
-  display: grid;
-  grid-template-columns: 60% 20% 20%;
-  align-items: center;
-  height: 3.125rem;
-}
-
-.info-card__info-layout p {
-  margin-bottom: 0;
-}
-
-.info-card__info-layout .info-card__indicator {
-  color: #000;
-  font-weight: 500;
-  font-size: 0.9375rem;
-  text-transform: uppercase;
-}
-
-.info-card__info-layout .athlete__name-container {
-  width: 90%;
-  overflow-x: hidden;
-}
-
-.info-card__info-layout .athlete__name-container p {
-  width: 18.75rem;
-}
-
-*:focus-visible {
-  outline: none !important;
-  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
-}
-
-input:focus-visible {
-  box-shadow: none !important;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  width: 4px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #4e4e4e;
-  border-radius: 6px;
-}
-
-label,
-a,
-button {
-  cursor: pointer;
-  transition: ease 0.3s;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.nav,
-.banner,
-.main-content__wrapper {
-  max-width: 1250px;
-}
-
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -449,7 +284,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -568,10 +403,201 @@ ul {
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1250px;
+}
+
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.banner__statistics .statistics__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  margin-bottom: 1.25rem;
+  height: 7.1875rem;
+  width: 100%;
+  max-width: 21.875rem;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: ease 0.5s;
+  transform: translateY(0px);
+  cursor: pointer;
+}
+
+.banner__statistics .statistics__card:hover {
+  transition: ease 0.5s;
+  box-shadow: 0px 4px 4px #93bb1c;
+}
+
+.info-card {
+  border-radius: 6px;
+  margin-bottom: 2.1875rem;
+  background: #fff;
+  height: 25rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info-card__banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left, #86aa19, #93bb1c);
+  height: 3.125rem;
+  padding: 0.3125rem 0.625rem;
+}
+
+.info-card__banner .info-card__title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.info-card__banner .info-card__button span {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background: url("../../icon/right-arrow.svg");
+}
+
+.info-card__banner select {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: #fff;
+}
+
+.info-card__banner select option {
+  -webkit-appearance: none;
+  color: #4e4e4e;
+  background: #f5f5f5;
+}
+
+.info-card__banner select:focus {
+  background: transparent;
+}
+
+.info-card__athlete--class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125rem;
+}
+
+.info-card__athlete--class .athlete__name {
+  margin-bottom: 0;
+}
+
+.info-card__athlete--class .athelte__link span {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background: url("../../icon/right-arrow-dark.svg");
+}
+
+.info-card__info-layout {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  align-items: center;
+  height: 3.125rem;
+}
+
+.info-card__info-layout p {
+  margin-bottom: 0;
+}
+
+.info-card__info-layout .info-card__indicator {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+}
+
+.info-card__info-layout .athlete__name-container {
+  width: 90%;
+  overflow-x: hidden;
+}
+
+.info-card__info-layout .athlete__name-container p {
+  width: 18.75rem;
+}
+
+.nav__close-btn {
+  outline: none;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 99999;
+}
+
+.nav__close-btn span {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background: url("../../icon/close.svg");
+}
+
+.sidebar.show {
+  transform: translateX(0);
 }
 
 .sidebar {
+  position: fixed;
+  width: 80%;
+  max-width: 15.625rem;
   background-color: #000;
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: ease 0.5s;
 }
 
 .sidebar__navigation {
@@ -722,7 +748,7 @@ ul {
   top: 40px !important;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -887,7 +913,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1132,7 +1158,7 @@ ul {
   background: url("../../icon/right-arrow-dark.svg");
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1297,7 +1323,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1474,7 +1500,7 @@ main {
   grid-template-columns: 100%;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1639,7 +1665,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1786,6 +1812,14 @@ ul {
 @media (min-width: 992px) {
   .wrapper {
     grid-template-columns: 18% 82%;
+  }
+  .nav__close-btn {
+    display: none;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    transform: translateX(0);
   }
   .nav__container .nav__element .current-date {
     display: inline-block;

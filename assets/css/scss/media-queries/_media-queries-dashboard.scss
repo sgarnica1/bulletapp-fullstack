@@ -41,6 +41,16 @@
     grid-template-columns: 18% 82%;
   }
 
+  .nav__close-btn {
+    display: none;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    transform: translateX(0);
+  }
+
   .nav {
     &__container {
       .nav__element {
