@@ -1079,6 +1079,7 @@ ul {
   padding-left: 2.5rem;
   margin-right: 0.75rem;
   border-radius: 6px;
+  background: #fff;
 }
 
 .banner__intro .banner__filter form .form__filter__button {
