@@ -126,8 +126,8 @@
               <h1 class="banner__user fw-bold mb-3">Bienvenido <span class="banner__username">Sergio</span></h1>
               <p>Resumen mensual</p>
             </div>
-            <div class="banner__filter">
-              <form action="" class="form__filter d-flex flex-row flex-wrap">
+            <div class="banner__filter d-lg-flex justify-content-end">
+              <form action="" class="form__filter d-grid">
                 <div class="input__container">
                   <span class="input__icon location"></span>
                   <select name="filter-location" id="filter-location" class="input__element">
@@ -206,7 +206,7 @@
         <div class="main-content__wrapper px-4 px-md-5">
 
           <!-- ATHLETES DATA -->
-          <section class="athletes__container d-md-grid">
+          <section class="athletes__container d-md-grid mb-5 mb-lg-3">
             <div class="payments info-card">
               <div class="info-card__banner info-card__header">
                 <h3 class="info-card__title">Pagos Realizados</h3>
@@ -359,7 +359,8 @@
             </div>
           </section>
 
-          <section class="plans__container dashboard__container">
+          <!-- PLANS -->
+          <section class="plans__container dashboard__container pt-4 pt-lg-0 mb-5">
             <div class="container__header">
               <h4 class="container__title">Planes</h4>
             </div>
@@ -434,6 +435,30 @@
                 <div class="plans-card__footer">
                   <span class="plans-card__footer-icon"></span>
                 </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- TOOLS -->
+          <section class="tools__container dashboard__container pb-5 pt-4 pt-lg-0">
+            <div class="container__header">
+              <h4 class="container__title">Herramientas</h4>
+            </div>
+            <div class="tools-card__container d-grid">
+              <article>
+                <a href="#" class="tools__card tools__card--programming tools__card--icon">
+                  <p class="tools__card-title">
+                    Programación
+                  </p>
+                  <span class="tools__card-icon"></span>
+                </a>
+              </article>
+              <article>
+                <a href="#" class="tools__card tools__card--video">
+                  <p class="tools__card-title">
+                    Videos Tutoriales
+                  </p>
+                </a>
               </article>
             </div>
           </section>

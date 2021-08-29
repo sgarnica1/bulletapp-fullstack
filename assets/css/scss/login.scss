@@ -107,6 +107,7 @@ body {
 
     .login__button--container {
       margin-bottom: toRem(50);
+      gap: toRem(5);
       .login__passrecover {
         text-decoration: none;
         text-transform: capitalize;

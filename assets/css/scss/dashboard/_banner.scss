@@ -3,6 +3,7 @@
 
 .content__banner {
   background: $color-background-linear;
+  padding-top: toRem(65);
 }
 
 .banner {
@@ -41,7 +42,6 @@
           height: 50px;
           border-radius: 6px;
           margin-bottom: toRem(15);
-          margin-right: toRem(20);
           background-color: $color-light;
 
           .input__icon {
