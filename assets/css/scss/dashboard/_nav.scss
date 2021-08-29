@@ -1,8 +1,35 @@
 @import "../config";
 @import "../global";
 
+.nav__close-btn {
+  outline: none;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 99999;
+
+  span {
+    width: toRem(15);
+    height: toRem(15);
+    background: url("../../icon/close.svg");
+    @extend %icon;
+  }
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
 .sidebar {
+  position: fixed;
+  width: 80%;
+  max-width: toRem(250);
   background-color: $color-dark;
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: ease 0.5s;
 
   &__navigation {
     grid-template-columns: 100%;
