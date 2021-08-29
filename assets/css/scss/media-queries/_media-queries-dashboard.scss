@@ -5,12 +5,9 @@
   .banner {
     .banner__statistics {
       display: grid;
-      grid-template-columns: repeat(2, toRem(250));
+      grid-template-columns: repeat(2, auto);
       gap: toRem(20);
 
-      .statistics__card {
-        max-width: toRem(250);
-      }
       .form__filter__button {
         width: toRem(50);
       }
@@ -19,6 +16,10 @@
     .banner__filter form .form__filter__button {
       width: toRem(50);
     }
+  }
+
+  .plans-card__container {
+    grid-template-columns: repeat(2, auto);
   }
 }
 
@@ -73,6 +74,10 @@
     max-width: toRem(350);
     justify-self: self-end;
   }
+
+  .plans-card__container {
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 @media (min-width: 1302px) {
@@ -91,7 +96,6 @@
       grid-template-columns: repeat(4, 1fr);
 
       .statistics__card {
-        max-width: toRem(235);
         height: toRem(100);
       }
     }

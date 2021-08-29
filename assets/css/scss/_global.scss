@@ -59,7 +59,6 @@ $hover-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: toRem(20);
   height: toRem(115);
   width: 100%;
-  max-width: toRem(350);
   border-radius: 6px;
   background-color: $color-light;
   box-shadow: $hover-box-shadow;
@@ -161,6 +160,64 @@ $hover-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     p {
       width: toRem(300);
+    }
+  }
+}
+
+%plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: $color-light;
+  box-shadow: $hover-box-shadow;
+  position: relative;
+  overflow: hidden;
+
+  .plans-card__header {
+    width: 100%;
+    height: toRem(55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $color-light;
+
+    .plans-card__title {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-weight: toRem(20);
+    }
+  }
+
+  .plans-card__body {
+    height: toRem(120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .plans-card__price {
+      font-size: toRem(36);
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+
+  .plans-card__footer {
+    width: 100%;
+    height: toRem(55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 toRem(20);
+
+    &-title {
+      margin-bottom: 0;
+      font-size: toRem(18);
+      font-weight: 300;
+    }
+    &-stats {
+      color: $color-secondary;
     }
   }
 }
