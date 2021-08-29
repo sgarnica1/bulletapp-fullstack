@@ -8,7 +8,6 @@ const showDropdown = () => {
       let currentDropdown = e.srcElement.closest('li')
       let button = currentDropdown.querySelector('button')
       let ul = currentDropdown.querySelector('ul')
-      // console.log(button)
 
       if (!button.classList.contains('show')) {
         button.classList.add('show')
