@@ -25,11 +25,13 @@
 .sidebar {
   position: fixed;
   width: 80%;
-  max-width: toRem(350);
+  // max-width: toRem(350);
   background-color: $color-dark;
   z-index: 9999;
   transform: translateX(-100%);
   transition: ease 0.5s;
+  display: flex;
+  justify-content: center;
 
   &__navigation {
     grid-template-columns: 100%;
@@ -38,6 +40,7 @@
     position: sticky;
     top: 0;
     width: 100%;
+    max-width: 350px;
     height: 100vh;
     padding: toRem(30) toRem(20) toRem(10) toRem(20);
 
@@ -110,7 +113,7 @@
 
 .navbar__wrapper {
   background-color: $color-background;
-  position: sticky;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;

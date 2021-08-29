@@ -89,7 +89,7 @@ ul {
 .nav,
 .banner,
 .main-content__wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
 }
 
 body {
@@ -197,6 +197,7 @@ body {
 
 .login__container .login__form .login__button--container {
   margin-bottom: 3.125rem;
+  gap: 0.3125rem;
 }
 
 .login__container .login__form .login__button--container .login__passrecover {
@@ -290,7 +291,7 @@ ul {
 .nav,
 .banner,
 .main-content__wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
 }
 
 .login__container .login__form .login__button--container .login__submit, .login__container .login__form .login__button--container .button__submit--fake {

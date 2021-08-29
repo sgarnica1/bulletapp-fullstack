@@ -12,7 +12,6 @@ main {
 .athletes__container {
   grid-template-columns: 53% 45%;
   gap: 20px;
-  margin-bottom: toRem(30);
 }
 
 .info-card {
@@ -71,7 +70,6 @@ main {
 }
 
 .plans-card__container {
-  grid-template-rows: repeat(6, auto);
   gap: toRem(30);
 
   .plans-card {
@@ -93,5 +91,27 @@ main {
     right: -15px;
     bottom: -13px;
     @extend %icon;
+  }
+}
+
+.tools-card__container {
+  gap: toRem(30);
+
+  .tools__card {
+    @extend %tools-card;
+  }
+
+  .tools__card--icon span {
+    background: url("../../icon/gun_sight_white.png");
+    width: toRem(50);
+    height: toRem(50);
+    @extend %icon;
+  }
+
+  .tools__card--programming {
+    background-image: url("../../img/media/programming_bg.jpg");
+  }
+  .tools__card--video {
+    background-image: url("../../img/media/video-tutorials_bg.jpg");
   }
 }

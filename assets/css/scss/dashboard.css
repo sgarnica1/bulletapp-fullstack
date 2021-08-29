@@ -1,4 +1,4 @@
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -22,6 +22,7 @@
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -177,7 +178,46 @@
   color: #93bb1c;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -201,6 +241,7 @@
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -354,6 +395,45 @@
 
 .plans-card__container .plans-card .plans-card__footer-stats {
   color: #93bb1c;
+}
+
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 *:focus-visible {
@@ -397,10 +477,10 @@ ul {
 .nav,
 .banner,
 .main-content__wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -424,6 +504,7 @@ ul {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -577,6 +658,45 @@ ul {
 
 .plans-card__container .plans-card .plans-card__footer-stats {
   color: #93bb1c;
+}
+
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 *:focus-visible {
@@ -620,10 +740,10 @@ ul {
 .nav,
 .banner,
 .main-content__wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -647,6 +767,7 @@ ul {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -800,6 +921,45 @@ ul {
 
 .plans-card__container .plans-card .plans-card__footer-stats {
   color: #93bb1c;
+}
+
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .nav__close-btn {
@@ -825,11 +985,12 @@ ul {
 .sidebar {
   position: fixed;
   width: 80%;
-  max-width: 21.875rem;
   background-color: #000;
   z-index: 9999;
   transform: translateX(-100%);
   transition: ease 0.5s;
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar__navigation {
@@ -839,6 +1000,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
+  max-width: 350px;
   height: 100vh;
   padding: 1.875rem 1.25rem 0.625rem 1.25rem;
 }
@@ -914,7 +1076,7 @@ ul {
 
 .navbar__wrapper {
   background-color: #f5f5f5;
-  position: sticky;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -981,7 +1143,7 @@ ul {
   top: 40px !important;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1005,6 +1167,7 @@ ul {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -1158,6 +1321,45 @@ ul {
 
 .plans-card__container .plans-card .plans-card__footer-stats {
   color: #93bb1c;
+}
+
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 *:focus-visible {
@@ -1201,10 +1403,10 @@ ul {
 .nav,
 .banner,
 .main-content__wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1228,6 +1430,7 @@ ul {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -1383,8 +1586,48 @@ ul {
   color: #93bb1c;
 }
 
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
 .content__banner {
   background: linear-gradient(#f5f5f5, #dedede);
+  padding-top: 4.0625rem;
 }
 
 .banner {
@@ -1425,7 +1668,6 @@ ul {
   height: 50px;
   border-radius: 6px;
   margin-bottom: 0.9375rem;
-  margin-right: 1.25rem;
   background-color: #fff;
 }
 
@@ -1507,7 +1749,7 @@ ul {
   background: url("../../icon/right-arrow-dark.svg");
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1531,6 +1773,7 @@ ul {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -1684,6 +1927,45 @@ ul {
 
 .plans-card__container .plans-card .plans-card__footer-stats {
   color: #93bb1c;
+}
+
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 *:focus-visible {
@@ -1727,10 +2009,10 @@ ul {
 .nav,
 .banner,
 .main-content__wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1754,6 +2036,7 @@ ul {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -1909,6 +2192,45 @@ ul {
   color: #93bb1c;
 }
 
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
 main {
   background: #f5f5f5;
 }
@@ -1920,7 +2242,6 @@ main {
 .athletes__container {
   grid-template-columns: 53% 45%;
   gap: 20px;
-  margin-bottom: 1.875rem;
 }
 
 .info-card__header {
@@ -1969,7 +2290,6 @@ main {
 }
 
 .plans-card__container {
-  grid-template-rows: repeat(6, auto);
   gap: 1.875rem;
 }
 
@@ -1991,12 +2311,30 @@ main {
   bottom: -13px;
 }
 
+.tools-card__container {
+  gap: 1.875rem;
+}
+
+.tools-card__container .tools__card--icon span {
+  background: url("../../icon/gun_sight_white.png");
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.tools-card__container .tools__card--programming {
+  background-image: url("../../img/media/programming_bg.jpg");
+}
+
+.tools-card__container .tools__card--video {
+  background-image: url("../../img/media/video-tutorials_bg.jpg");
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 100%;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -2020,6 +2358,7 @@ main {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -2173,6 +2512,45 @@ main {
 
 .plans-card__container .plans-card .plans-card__footer-stats {
   color: #93bb1c;
+}
+
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 *:focus-visible {
@@ -2216,10 +2594,10 @@ ul {
 .nav,
 .banner,
 .main-content__wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -2243,6 +2621,7 @@ ul {
 }
 
 .banner__statistics .statistics__card:hover {
+  transform: translateY(-5px);
   transition: ease 0.5s;
   box-shadow: 0px 4px 4px #93bb1c;
 }
@@ -2398,6 +2777,45 @@ ul {
   color: #93bb1c;
 }
 
+.tools-card__container .tools__card {
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  gap: 0.9375rem;
+}
+
+.tools-card__container .tools__card .tools__card-title {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.tools-card__container .tools__card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.tools-card__container .tools__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 550px) {
   .banner .banner__statistics {
     display: grid;
@@ -2413,17 +2831,36 @@ ul {
   .plans-card__container {
     grid-template-columns: repeat(2, auto);
   }
+  .tools-card__container .tools__card .tools__card-title {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 575px) {
+  .banner__intro .banner__filter form {
+    grid-template-columns: repeat(3, auto);
+    gap: 0.625rem;
+  }
+  .banner__intro .banner__filter form .input__container {
+    max-width: 100%;
+  }
   .banner__intro .banner__filter form .form__filter__button {
     width: 3.125rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .tools-card__container {
+    grid-template-columns: repeat(2, auto);
   }
 }
 
 @media (min-width: 992px) {
   .wrapper {
     grid-template-columns: 18% 82%;
+  }
+  .nav {
+    margin-left: 18%;
   }
   .nav__close-btn {
     display: none;
@@ -2443,16 +2880,15 @@ ul {
   .banner .banner__intro {
     grid-template-columns: 45% 55%;
   }
-  .banner .banner__intro .banner__filter {
-    max-width: 21.875rem;
-    justify-self: self-end;
+  .banner .banner__intro .banner__filter form {
+    grid-template-columns: 40% 40% 10%;
   }
   .plans-card__container {
     grid-template-columns: repeat(3, auto);
   }
 }
 
-@media (min-width: 1302px) {
+@media (min-width: 1300px) {
   .banner .banner__intro {
     grid-template-columns: 35% 65%;
   }
@@ -2465,6 +2901,13 @@ ul {
     grid-template-columns: repeat(4, 1fr);
   }
   .banner .banner__statistics .statistics__card {
+    height: 6.25rem;
+  }
+  .tools-card__container .tools__card .tools__card-title {
+    font-size: 2.625rem;
+  }
+  .tools-card__container .tools__card--icon span {
+    width: 6.25rem;
     height: 6.25rem;
   }
 }
