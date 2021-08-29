@@ -602,7 +602,8 @@ ul {
 
 .sidebar__navigation {
   grid-template-columns: 100%;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 80px auto;
+  gap: 20px;
   position: sticky;
   top: 0;
   width: 100%;
@@ -623,7 +624,7 @@ ul {
 .sidebar__navigation .navlist__wrapper {
   height: 92%;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 15px;
   padding-right: 0.625rem;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -1824,6 +1825,9 @@ ul {
   .nav__container .nav__element .current-date {
     display: inline-block;
     font-family: "Roboto", sans-serif;
+  }
+  .navlist__wrapper {
+    margin-top: 25px;
   }
   .banner .banner__intro {
     grid-template-columns: 45% 55%;

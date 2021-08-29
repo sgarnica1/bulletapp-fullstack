@@ -33,7 +33,8 @@
 
   &__navigation {
     grid-template-columns: 100%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 80px auto;
+    gap: 20px;
     position: sticky;
     top: 0;
     width: 100%;
@@ -53,7 +54,7 @@
     .navlist__wrapper {
       height: 92%;
       width: 100%;
-      margin-top: 25px;
+      margin-top: 15px;
       padding-right: toRem(10);
       overflow-y: scroll;
       overflow-x: hidden;
