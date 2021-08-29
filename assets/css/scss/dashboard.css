@@ -1,4 +1,4 @@
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -13,7 +13,6 @@
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -119,7 +118,66 @@
   width: 18.75rem;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
+}
+
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -134,7 +192,6 @@
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -238,6 +295,65 @@
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
 }
 
 *:focus-visible {
@@ -284,7 +400,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -299,7 +415,6 @@ ul {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -403,6 +518,65 @@ ul {
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
 }
 
 *:focus-visible {
@@ -449,7 +623,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -464,7 +638,6 @@ ul {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -568,6 +741,65 @@ ul {
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
 }
 
 .nav__close-btn {
@@ -749,7 +981,7 @@ ul {
   top: 40px !important;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -764,7 +996,6 @@ ul {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -868,6 +1099,65 @@ ul {
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
 }
 
 *:focus-visible {
@@ -914,7 +1204,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -929,7 +1219,6 @@ ul {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1033,6 +1322,65 @@ ul {
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
 }
 
 .content__banner {
@@ -1159,7 +1507,7 @@ ul {
   background: url("../../icon/right-arrow-dark.svg");
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1174,7 +1522,6 @@ ul {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1278,6 +1625,65 @@ ul {
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
 }
 
 *:focus-visible {
@@ -1324,7 +1730,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1339,7 +1745,6 @@ ul {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1445,6 +1850,65 @@ ul {
   width: 18.75rem;
 }
 
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
+}
+
 main {
   background: #f5f5f5;
 }
@@ -1456,6 +1920,7 @@ main {
 .athletes__container {
   grid-template-columns: 53% 45%;
   gap: 20px;
+  margin-bottom: 1.875rem;
 }
 
 .info-card__header {
@@ -1496,12 +1961,42 @@ main {
   border-bottom: 0;
 }
 
+.dashboard__container .container__header .container__title {
+  color: #767676;
+  font-weight: 500;
+  font-size: 1.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.plans-card__container {
+  grid-template-rows: repeat(6, auto);
+  gap: 1.875rem;
+}
+
+.plans-card__container .plans-card:nth-child(2n) {
+  background: linear-gradient(to left, #0f0f0f, #333333);
+}
+
+.plans-card__container .plans-card:nth-child(2n + 1) {
+  background: linear-gradient(to left, #4e4e4e, #333333);
+}
+
+.plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
+  background: url("../../icon/gun_sight_gray.png");
+  width: 6.25rem;
+  height: 6.25rem;
+  display: inline-block;
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 100%;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1516,7 +2011,6 @@ main {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1620,6 +2114,65 @@ main {
 
 .info-card__info-layout .athlete__name-container p {
   width: 18.75rem;
+}
+
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
 }
 
 *:focus-visible {
@@ -1666,7 +2219,7 @@ ul {
   max-width: 1250px;
 }
 
-.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span {
+.info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -1681,7 +2234,6 @@ ul {
   margin-bottom: 1.25rem;
   height: 7.1875rem;
   width: 100%;
-  max-width: 21.875rem;
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1787,20 +2339,79 @@ ul {
   width: 18.75rem;
 }
 
+.plans-card__container .plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.plans-card__container .plans-card .plans-card__header {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.plans-card__container .plans-card .plans-card__header .plans-card__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__body {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-card__container .plans-card .plans-card__body .plans-card__price {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.plans-card__container .plans-card .plans-card__footer {
+  width: 100%;
+  height: 3.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+.plans-card__container .plans-card .plans-card__footer-title {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.plans-card__container .plans-card .plans-card__footer-stats {
+  color: #93bb1c;
+}
+
 @media (min-width: 550px) {
   .banner .banner__statistics {
     display: grid;
-    grid-template-columns: repeat(2, 15.625rem);
+    grid-template-columns: repeat(2, auto);
     gap: 1.25rem;
-  }
-  .banner .banner__statistics .statistics__card {
-    max-width: 15.625rem;
   }
   .banner .banner__statistics .form__filter__button {
     width: 3.125rem;
   }
   .banner .banner__filter form .form__filter__button {
     width: 3.125rem;
+  }
+  .plans-card__container {
+    grid-template-columns: repeat(2, auto);
   }
 }
 
@@ -1836,6 +2447,9 @@ ul {
     max-width: 21.875rem;
     justify-self: self-end;
   }
+  .plans-card__container {
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 @media (min-width: 1302px) {
@@ -1851,7 +2465,6 @@ ul {
     grid-template-columns: repeat(4, 1fr);
   }
   .banner .banner__statistics .statistics__card {
-    max-width: 14.6875rem;
     height: 6.25rem;
   }
 }

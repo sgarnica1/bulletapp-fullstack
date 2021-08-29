@@ -16,6 +16,13 @@
   background-color: #ade014;
 }
 
+.login__container .login__form .login__input--container .login__input .password--toggle {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
 .login__container .login__form .login__button--container .login__submit, .login__container .login__form .login__button--container .button__submit--fake {
   display: flex;
   justify-content: center;
@@ -32,6 +39,13 @@
 
 .login__container .login__form .login__button--container .login__submit:hover, .login__container .login__form .login__button--container .button__submit--fake:hover {
   background-color: #ade014;
+}
+
+.login__container .login__form .login__input--container .login__input .password--toggle {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
 }
 
 *:focus-visible {
@@ -168,11 +182,9 @@ body {
   height: 1.25rem;
   width: 1.25rem;
   cursor: pointer;
-  display: inline-block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background: url("../../icon/invisible.svg");
+  position: absolute;
+  bottom: 10px;
 }
 
 .login__container .login__form .login__input--container .login__input .password--toggle.visible {
@@ -228,6 +240,13 @@ body {
 
 .login__container .login__form .login__button--container .login__submit:hover, .login__container .login__form .login__button--container .button__submit--fake:hover {
   background-color: #ade014;
+}
+
+.login__container .login__form .login__input--container .login__input .password--toggle {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
 }
 
 *:focus-visible {
@@ -290,6 +309,13 @@ ul {
 
 .login__container .login__form .login__button--container .login__submit:hover, .login__container .login__form .login__button--container .button__submit--fake:hover {
   background-color: #ade014;
+}
+
+.login__container .login__form .login__input--container .login__input .password--toggle {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
 }
 
 @media (min-width: 992px) {

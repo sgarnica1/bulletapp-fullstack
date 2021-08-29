@@ -89,11 +89,10 @@ body {
           height: toRem(20);
           width: toRem(20);
           cursor: pointer;
-          display: inline-block;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
           background: url("../../icon/invisible.svg");
+          @extend %icon;
+          position: absolute;
+          bottom: 10px;
         }
 
         .password--toggle.visible {
