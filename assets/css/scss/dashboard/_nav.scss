@@ -139,11 +139,15 @@
         }
 
         .navlist__dropdown-container {
-          display: none;
+          // display: none;
+          height: auto;
+          max-height: 0;
           width: 100%;
-          padding: toRem(10);
+          padding: 0 toRem(10);
           background-color: #0d0d0d;
           border-radius: 0 0 6px 6px;
+          overflow: hidden;
+          transition: max-height ease 0.3s;
 
           .navlist__dropdown-element a {
             display: flex;
@@ -166,7 +170,8 @@
           }
         }
         .navlist__dropdown-container.show {
-          display: block;
+          max-height: 700px;
+          padding: toRem(10) toRem(10);
         }
       }
 
