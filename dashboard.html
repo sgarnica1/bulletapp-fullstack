@@ -29,6 +29,7 @@
 
 <body>
   <div class="wrapper">
+
     <!-- SIDEBAR -->
     <aside class=" sidebar d-lg-flex ">
       <button class="nav__close-btn"><span></span></button>
@@ -42,14 +43,67 @@
             <li class="navlist__item active">
               <a href="/dashboard.html" class="navlist__link">Escritorio</a>
             </li>
-            <li class="navlist__item ">
-              <a href="#" class="navlist__link">Sucursales</a>
+            <li class="navlist__item navlist__dropdown">
+              <button href="#" class="navlist__link navlist__dropdown-btn">
+                <p>Sucursales</p>
+                <span></span>
+              </button>
+              <ul class="navlist__dropdown-container">
+                <li class="navlist__dropdown-element active">
+                  <a href="/dashboard.html">Juriquilla</a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    Zibatá
+                  </a></li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    Grand Reserva
+                  </a></li>
+              </ul>
             </li>
-            <li class="navlist__item ">
+            <li class="navlist__item">
               <a href="#" class="navlist__link">Pagos</a>
             </li>
-            <li class="navlist__item ">
-              <a href="#" class="navlist__link">Clases</a>
+            <li class="navlist__item navlist__dropdown">
+              <button href="#" class="navlist__link navlist__dropdown-btn">
+                <p>Clases</p>
+                <span></span>
+              </button>
+              <ul class="navlist__dropdown-container">
+                <li class="navlist__dropdown-element active">
+                  <a href="/dashboard.html">6:00am</a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    7:30am
+                  </a></li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    8:30am
+                  </a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    7:30am
+                  </a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    9:30am
+                  </a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    6:00pm
+                  </a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    7:00pm
+                  </a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    8:00pm
+                  </a>
+                </li>
+                <li class="navlist__dropdown-element"><a href="#">
+                    9:00pm
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="navlist__item ">
               <a href="#" class="navlist__link">Atletas</a>
@@ -82,6 +136,7 @@
 
     <!-- CONTENT WRAPPER -->
     <div class="content">
+
       <!-- NAVBAR -->
       <div class="navbar__wrapper">
         <nav class="nav d-flex align-items-center justify-content-between justify-content-lg-end py-2 px-3">
@@ -91,7 +146,7 @@
           </button>
           <ul class="nav__container d-flex justify-content-center align-items-center m-0">
             <li class="nav__element">
-              <span class="current-date">26 Marzo 2021</span>
+              <span class="current-date"></span>
             </li>
             <div class="nav__divider--vertical d-none d-lg-block"></div>
             <li class="nav__element">
@@ -479,6 +534,7 @@
 
   <script src="./assets/js/setDate.js"></script>
   <script src="./assets/js/hamburger-sidebar.js"></script>
+  <script src="./assets/js/dropdown-navbar.js"></script>
 
 </body>
 

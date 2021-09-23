@@ -102,6 +102,10 @@
 }
 
 @media (min-width: 1300px) {
+  .sidebar {
+    max-width: 100%;
+  }
+
   .banner {
     .banner__intro {
       grid-template-columns: 35% 65%;

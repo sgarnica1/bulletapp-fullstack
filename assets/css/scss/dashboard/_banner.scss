@@ -71,6 +71,9 @@
             margin-right: toRem(12);
             border-radius: 6px;
             background: $color-light;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
           }
         }
 
