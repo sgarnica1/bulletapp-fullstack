@@ -110,6 +110,7 @@ body {
   padding: 1.5625rem;
   padding-top: 3.125rem;
   position: relative;
+  background: #000;
 }
 
 .login__container .login__header .header__logo {

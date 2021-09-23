@@ -1102,14 +1102,11 @@ ul {
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container {
-  height: auto;
-  max-height: 0;
+  display: none;
   width: 100%;
-  padding: 0 0.625rem;
+  padding: 0.625rem;
   background-color: #0d0d0d;
   border-radius: 0 0 6px 6px;
-  overflow: hidden;
-  transition: max-height ease 0.3s;
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container .navlist__dropdown-element a {
@@ -1135,8 +1132,7 @@ ul {
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container.show {
-  max-height: 700px;
-  padding: 0.625rem 0.625rem;
+  display: block;
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.active a {
