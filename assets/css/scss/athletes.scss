@@ -1,8 +1,9 @@
 @import "./global";
 @import "./config";
 @import "./dashboard/nav";
-@import "./dashboard/banner";
-@import "./dashboard/main-content";
+@import "./dashboard/intro";
+@import "./athletes/athletesList";
 
 // MEDIA QUERIES
+@import "./media-queries/athletes-media-queries";
 @import "./media-queries/dashboard-media-queries";
