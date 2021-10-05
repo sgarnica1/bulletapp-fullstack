@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atleta - Bullet CrossFit App</title>
+  <title>Nuevo Atleta - Bullet CrossFit App</title>
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="./assets/icon/favicon.png" type="image/x-icon">
@@ -179,91 +179,64 @@
           <!-- INTRO -->
           <section class="intro mb-5 d-block d-md-grid">
             <div class="intro__info">
-              <h2 class="intro__title fw-bold mb-4">Atletas</h2>
+              <h2 class="intro__title fw-bold mb-4">Añadir Atleta</h2>
               <p class="intro__description mb-5 mb-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod
                 tempor incididunt ut labore et dolore magna aliqu</p>
             </div>
             <div class="intro__button">
-              <a href="/new-athlete.html">Añadir Atleta</a>
+              <a href="#">Añadir Atleta</a>
             </div>
           </section>
 
-          <!-- SEARCH FORM -->
-          <section class="query">
-            <form action="" class="query__form">
-              <div class="query__main">
-                <div class="query__search-bar d-block d-md-grid">
-                  <div class="query__input-container query__input-container--main mb-md-0">
-                    <span class="query__input-icon"></span>
-                    <input type="text" name="payment-reference" id="payment-reference"
-                      placeholder="Busca por atleta o número de pago">
-                  </div>
-                  <button type="submit" class="d-flex">Buscar</button>
-                </div>
+
+
+          <!-- NEW ATHLETE FORM -->
+          <section class="new-athletes">
+            <form action="" class="new-athlete__form">
+              <div class="input__container input__container--firstname">
+                <label for="firstname">Nombre</label>
+                <input type="text" name="firstname" id="firstname">
               </div>
-              <div class="query__options">
-                <div class="query__option-container query__option--orderby">
-                  <select name="orderby" id="orderby">
-                    <option value="all">Ordenar por</option>
-                    <option value="ascending-name">A-Z</option>
-                    <option value="descending-name">Z-A</option>
-                    <option value="ascending-date">Más reciente</option>
-                    <option value="descending-date">Más antiguo</option>
-                  </select>
-                </div>
-                <div class="query__option-container query__option--flush-filters">
-                  <button type="reset" class="query__filter--flush">Borrar filtros</button>
-                </div>
+              <div class="input__container input__container--lastname">
+                <label for="lastname">Apellidos</label>
+                <input type="text" name="lastname" id="lastname">
               </div>
+              <div class="input__container input__container--email">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+              </div>
+              <div class="input__container input__container--">
+                <label for="phone">Número de teléfono</label>
+                <input type="number" name="phone" id="phone">
+              </div>
+              <div class="input__container input__container--">
+                <label for="plan">Plan</label>
+                <select name="plan" id="plan">
+                  <option value="all">Selecciona un plan</option>
+                  <option value="p-5">5D</option>
+                  <option value="p-3">3D</option>
+                  <option value="p-kids">Kids</option>
+                  <option value="p-pareja">Pareja</option>
+                  <option value="p-familiar">Familiar</option>
+                </select>
+              </div>
+              <div class="input__container input__container--">
+                <label for="group">Clase</label>
+                <select name="group" id="group">
+                  <option value="all">Selecciona una clase</option>
+                  <option value="6:00am">6:00am</option>
+                  <option value="7:30am">7:30am</option>
+                  <option value="8:30am">8:30am</option>
+                  <option value="9:30am">9:30am</option>
+                  <option value="6:00pm">6:00pm</option>
+                  <option value="6:00pm">7:00pm</option>
+                  <option value="6:00pm">8:00pm</option>
+                  <option value="6:00pm">9:00pm</option>
+                </select>
+              </div>
+              <button type="submit">Crear Atleta</button>
             </form>
-          </section>
-
-
-          <!-- ATHLETES -->
-          <section class="athletes">
-            <div class="athletes__container">
-              <article class="athlete athletes__header">
-                <div class="athlete__name">Nombre</div>
-                <div class="athlete__email">Email</div>
-                <div class="athlete__phone">Teléfono</div>
-                <div class="athlete__plan">Plan</div>
-                <div class="athlete__group">Clase</div>
-                <div class="athlete__date">Ingreso</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">María José Salazar Martín del Campo</div>
-                <div class="athlete__email">maria@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">Sergio Garnica González</div>
-                <div class="athlete__email">sgarnica1902@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">Sergio Garnica González</div>
-                <div class="athlete__email">sgarnica1902@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">Sergio Garnica González</div>
-                <div class="athlete__email">sgarnica1902@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
-            </div>
           </section>
         </div>
       </main>
