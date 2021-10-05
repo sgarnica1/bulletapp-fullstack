@@ -8,43 +8,58 @@
     overflow-x: scroll;
     overflow-y: hidden;
     border-radius: toRem(6);
-    box-shadow: $hover-box-shadow;
+    // box-shadow: $hover-box-shadow;
     background: $color-light;
   }
 
+  .athlete:last-of-type {
+    border: none;
+  }
+
   .athlete {
+    display: grid;
     grid-template-columns: repeat(6, auto);
-    height: toRem(70);
-    padding: toRem(20);
-    border-bottom: 1px solid black;
+    min-height: toRem(70);
+    min-width: fit-content;
+    border-bottom: 1px solid $color-alternative;
 
     & div {
       overflow-x: scroll;
       overflow-y: hidden;
+      padding: toRem(20);
     }
 
     &__name {
-      width: toRem(150);
+      min-width: toRem(250);
+      max-width: toRem(250);
     }
     &__email {
-      width: toRem(250);
+      min-width: toRem(250);
+      max-width: toRem(250);
     }
     &__phone {
-      width: toRem(150);
+      min-width: toRem(150);
     }
     &__plan,
-    &__group,
+    &__group {
+      min-width: toRem(100);
+    }
     &__date {
-      width: toRem(100);
+      min-width: toRem(150);
     }
   }
 
   &__header.athlete {
-    // height: toRem(50);
+    min-height: toRem(20);
+    padding: 0;
     background: $linear-gradient-header;
+    border: none;
 
     div {
       font-weight: bold;
+      color: $color-light;
+      // display: flex;
+      align-items: center;
     }
   }
 }

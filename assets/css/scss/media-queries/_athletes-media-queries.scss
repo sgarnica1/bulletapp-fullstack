@@ -1,16 +1,11 @@
 @import "../config";
 @import "../global";
 
-@media (min-width: 1170px) {
+@media (min-width: 1300px) {
   .athletes {
     &__container,
     &__container .athlete div {
       overflow: hidden;
-    }
-
-    .athlete__name {
-      width: toRem(230);
-      white-space: nowrap;
     }
   }
 }

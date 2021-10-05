@@ -700,44 +700,60 @@ main .intro__button a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   border-radius: 0.375rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #fff;
 }
 
+.athletes .athlete:last-of-type {
+  border: none;
+}
+
 .athletes .athlete {
+  display: grid;
   grid-template-columns: repeat(6, auto);
-  height: 4.375rem;
-  padding: 1.25rem;
-  border-bottom: 1px solid black;
+  min-height: 4.375rem;
+  min-width: fit-content;
+  border-bottom: 1px solid #a7a7a7;
 }
 
 .athletes .athlete div {
   overflow-x: scroll;
   overflow-y: hidden;
+  padding: 1.25rem;
 }
 
 .athletes .athlete__name {
-  width: 9.375rem;
+  min-width: 15.625rem;
+  max-width: 15.625rem;
 }
 
 .athletes .athlete__email {
-  width: 15.625rem;
+  min-width: 15.625rem;
+  max-width: 15.625rem;
 }
 
 .athletes .athlete__phone {
-  width: 9.375rem;
+  min-width: 9.375rem;
 }
 
-.athletes .athlete__plan, .athletes .athlete__group, .athletes .athlete__date {
-  width: 6.25rem;
+.athletes .athlete__plan, .athletes .athlete__group {
+  min-width: 6.25rem;
+}
+
+.athletes .athlete__date {
+  min-width: 9.375rem;
 }
 
 .athletes__header.athlete {
+  min-height: 1.25rem;
+  padding: 0;
   background: linear-gradient(to left, #86aa19, #93bb1c);
+  border: none;
 }
 
 .athletes__header.athlete div {
   font-weight: bold;
+  color: #fff;
+  align-items: center;
 }
 
 main .intro__button a {
@@ -847,14 +863,10 @@ main .intro__button a:hover {
   background-size: contain !important;
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1300px) {
   .athletes__container,
   .athletes__container .athlete div {
     overflow: hidden;
-  }
-  .athletes .athlete__name {
-    width: 14.375rem;
-    white-space: nowrap;
   }
 }
 
