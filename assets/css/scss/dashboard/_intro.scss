@@ -1,0 +1,14 @@
+@import "../config";
+@import "../global";
+
+main .intro {
+  grid-template-columns: 72% 28%;
+
+  &__description {
+    max-width: toRem(600);
+  }
+  &__button a {
+    max-width: toRem(230);
+    @extend %button;
+  }
+}

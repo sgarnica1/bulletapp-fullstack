@@ -37,6 +37,15 @@ ul {
   list-style: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  background: $color-background;
+}
+
 // MAX WIDTH
 .nav,
 .banner,

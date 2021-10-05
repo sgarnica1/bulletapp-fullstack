@@ -1,10 +1,6 @@
 @import "../config";
 @import "../global";
 
-main {
-  background: $color-background;
-}
-
 .main-content__wrapper {
   padding-top: toRem(100);
 }

@@ -4,10 +4,5 @@
 @import "./dashboard/banner";
 @import "./dashboard/main-content";
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 100%;
-}
-
 // MEDIA QUERIES
 @import "./media-queries/media-queries-dashboard";

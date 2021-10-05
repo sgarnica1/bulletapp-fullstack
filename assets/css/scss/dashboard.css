@@ -474,6 +474,15 @@ ul {
   list-style: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  background: #f5f5f5;
+}
+
 .nav,
 .banner,
 .main-content__wrapper {
@@ -735,6 +744,15 @@ button {
 
 ul {
   list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  background: #f5f5f5;
 }
 
 .nav,
@@ -1473,6 +1491,15 @@ ul {
   list-style: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  background: #f5f5f5;
+}
+
 .nav,
 .banner,
 .main-content__wrapper {
@@ -2080,6 +2107,15 @@ ul {
   list-style: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  background: #f5f5f5;
+}
+
 .nav,
 .banner,
 .main-content__wrapper {
@@ -2305,10 +2341,6 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
-main {
-  background: #f5f5f5;
-}
-
 .main-content__wrapper {
   padding-top: 6.25rem;
 }
@@ -2401,11 +2433,6 @@ main {
 
 .tools-card__container .tools__card--video {
   background-image: url("../../img/media/video-tutorials_bg.jpg");
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 100%;
 }
 
 .info-card__banner .info-card__button span, .info-card__athlete--class .athelte__link span, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span, .banner__intro .banner__filter form .input__container .input__icon, .banner__intro .banner__filter form .form__filter__button span, .banner__statistics .statistics__card .statistics__button span, .plans-card__container .plans-card .plans-card__footer .plans-card__footer-icon, .tools-card__container .tools__card--icon span {
@@ -2663,6 +2690,15 @@ button {
 
 ul {
   list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  background: #f5f5f5;
 }
 
 .nav,

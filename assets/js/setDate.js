@@ -1,6 +1,10 @@
 const currentDate = new Date();
 const navDate = document.querySelector('.current-date')
-const filterMonthInput = document.getElementById('filter-month')
+
+const dashBoardPath = new RegExp('dashboard.*')
+let filterMonthInput
+
+
 
 const day = currentDate.getDate()
 const month = currentDate.getMonth()
@@ -55,16 +59,21 @@ const setDate = month => {
   navDate.innerText = fullDate
 }
 
-const setCurrentMonth = (year, month) => {
-  let monthNumber = month + 1
-  monthNumber = monthNumber.toString();
-  if (monthNumber.length == 1) {
-    filterMonthInput.value = `${year}-0${monthNumber}`
-  } else {
-    filterMonthInput.value = `${year}-${monthNumber}`
+
+if (dashBoardPath.test(document.location.pathname)) {
+  filterMonthInput = document.getElementById('filter-month')
+    const setCurrentMonth = (year, month) => {
+    let monthNumber = month + 1
+    monthNumber = monthNumber.toString();
+    if (monthNumber.length == 1) {
+      filterMonthInput.value = `${year}-0${monthNumber}`
+    } else {
+      filterMonthInput.value = `${year}-${monthNumber}`
+    }
   }
-  
+  setCurrentMonth(year, month)
 }
 
 setDate(month)
-setCurrentMonth(year, month)
+
+
