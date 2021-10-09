@@ -7,8 +7,30 @@ main .intro {
   &__description {
     max-width: toRem(600);
   }
-  &__button a {
-    max-width: toRem(230);
-    @extend %button;
+  &__button {
+    display: flex;
+
+    .intro__button-link {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // width: toRem(230);
+      // max-width: toRem(230);
+      // height: toRem(50);
+      // color: $color-light;
+      // padding: toRem(10) toRem(30);
+      // border: 2px solid $color-secondary;
+      // border-radius: toRem(6);
+      // font-weight: 600;
+      // background: $color-secondary;
+      // cursor: pointer;
+      @extend %button;
+    }
+
+    // .intro__button-link:hover {
+    //   border-color: $color-primary;
+    //   background-color: $color-primary;
+    //   color: $color-light;
+    // }
   }
 }

@@ -8,7 +8,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     border-radius: toRem(6);
-    // box-shadow: $hover-box-shadow;
+    box-shadow: $hover-box-shadow;
     background: $color-light;
   }
 
@@ -24,8 +24,7 @@
     border-bottom: 1px solid $color-alternative;
 
     & div {
-      overflow-x: scroll;
-      overflow-y: hidden;
+      overflow: hidden;
       padding: toRem(20);
     }
 

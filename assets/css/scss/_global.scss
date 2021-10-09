@@ -1,13 +1,15 @@
 // VARIABLES
 $color-primary: #4e4e4e;
-$color-secondary: #93bb1c;
-$color-secondary-hover: #ade014;
+// $color-secondary: #93bb1c;
+$color-secondary: #a7d41f;
+$color-secondary-hover: #4e4e4e;
 $color-dark: #000;
 $color-light: #fff;
 $color-background: #f5f5f5;
 $color-background-linear: linear-gradient(#f5f5f5, #dedede);
 $color-alternative: #a7a7a7;
 $color-alternative-2: #767676;
+$color-error: #de2316;
 $linear-gradient-1: linear-gradient(to left, #0f0f0f, #333333);
 $linear-gradient-2: linear-gradient(to left, #4e4e4e, #333333);
 $linear-gradient-header: linear-gradient(to left, #86aa19, #93bb1c);
@@ -28,6 +30,7 @@ $hover-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 // TEMPLATES
 %button {
   display: flex;
+  max-height: toRem(50);
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -41,7 +44,8 @@ $hover-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 %button:hover {
-  background-color: $color-secondary-hover;
+  background-color: #93bb1c;
+  // box-shadow: $hover-box-shadow;
 }
 
 %icon {

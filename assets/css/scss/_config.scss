@@ -5,9 +5,10 @@
 *:focus-visible {
   outline: none !important;
   box-shadow: $focus-box-shadow;
-  border-radius: 2px !important;
+  border-radius: 6px !important;
 }
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   box-shadow: none !important;
 }
 
@@ -43,6 +44,7 @@ ul {
 }
 
 main {
+  min-height: 100vh;
   background: $color-background;
 }
 

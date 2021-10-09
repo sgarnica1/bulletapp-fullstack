@@ -69,7 +69,7 @@
                 <span></span>
               </button>
               <ul class="navlist__dropdown-container">
-                <li class="navlist__dropdown-element active">
+                <li class="navlist__dropdown-element">
                   <a href="/dashboard.html">6:00am</a>
                 </li>
                 <li class="navlist__dropdown-element"><a href="#">
@@ -105,8 +105,19 @@
                 </li>
               </ul>
             </li>
-            <li class="navlist__item active">
-              <a href="/athletes.html" class="navlist__link">Atletas</a>
+            <li class="navlist__item navlist__dropdown active">
+              <button class="navlist__link navlist__dropdown-btn">
+                <p>Atletas</p>
+                <span></span>
+              </button>
+              <ul class="navlist__dropdown-container">
+                <li class="navlist__dropdown-element active">
+                  <a href="./athletes.html">Lista de Atletas</a>
+                </li>
+                <li class="navlist__dropdown-element">
+                  <a href="./new-athlete.html">Añadir Atleta</a>
+                </li>
+              </ul>
             </li>
             <li class="navlist__item ">
               <a href="#" class="navlist__link">Planes</a>
@@ -185,27 +196,25 @@
                 tempor incididunt ut labore et dolore magna aliqu</p>
             </div>
             <div class="intro__button">
-              <a href="/new-athlete.html">Añadir Atleta</a>
+              <a href="/new-athlete.html" class="intro__button-link">Añadir Atleta</a>
             </div>
           </section>
 
           <!-- SEARCH FORM -->
           <section class="query">
-            <form action="" class="query__form">
+            <form action="" class="query__form d-block d-md-grid" autocomplete="off">
               <div class="query__main">
                 <div class="query__search-bar d-block d-md-grid">
-                  <div class="query__input-container query__input-container--main mb-md-0">
+                  <div class="query__input-container query__input-container--main mb-4">
                     <span class="query__input-icon"></span>
-                    <input type="text" name="payment-reference" id="payment-reference"
-                      placeholder="Busca por atleta o número de pago">
+                    <input type="text" name="athlete-name-search" id="athlete-name-search" placeholder="Buscar atleta">
                   </div>
-                  <button type="submit" class="d-flex">Buscar</button>
                 </div>
               </div>
               <div class="query__options">
                 <div class="query__option-container query__option--orderby">
                   <select name="orderby" id="orderby">
-                    <option value="all">Ordenar por</option>
+                    <option value="ascending-date">Ordenar por</option>
                     <option value="ascending-name">A-Z</option>
                     <option value="descending-name">Z-A</option>
                     <option value="ascending-date">Más reciente</option>
@@ -222,47 +231,22 @@
 
           <!-- ATHLETES -->
           <section class="athletes">
+            <div class="athletes__no-results d-none">
+              <h3>No hay resultados</h3>
+            </div>
             <div class="athletes__container">
-              <article class="athlete athletes__header">
-                <div class="athlete__name">Nombre</div>
-                <div class="athlete__email">Email</div>
-                <div class="athlete__phone">Teléfono</div>
-                <div class="athlete__plan">Plan</div>
-                <div class="athlete__group">Clase</div>
-                <div class="athlete__date">Ingreso</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">María José Salazar Martín del Campo</div>
-                <div class="athlete__email">maria@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">Sergio Garnica González</div>
-                <div class="athlete__email">sgarnica1902@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">Sergio Garnica González</div>
-                <div class="athlete__email">sgarnica1902@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
-              <article class="athlete">
-                <div class="athlete__name">Sergio Garnica González</div>
-                <div class="athlete__email">sgarnica1902@gmail.com</div>
-                <div class="athlete__phone">442.439.6065</div>
-                <div class="athlete__plan">5D</div>
-                <div class="athlete__group">6PM</div>
-                <div class="athlete__date">11/07/2016</div>
-              </article>
+              <div class="athletes__header-container">
+                <article class="athlete athletes__header">
+                  <div class="athlete__name">Nombre</div>
+                  <div class="athlete__email">Email</div>
+                  <div class="athlete__phone">Teléfono</div>
+                  <div class="athlete__plan">Plan</div>
+                  <div class="athlete__group">Clase</div>
+                  <div class="athlete__date">Ingreso</div>
+                </article>
+              </div>
+              <div class="athletes__body">
+              </div>
             </div>
           </section>
         </div>
@@ -281,8 +265,9 @@
     crossorigin="anonymous"></script>
 
   <script src="./assets/js/setDate.js"></script>
-  <script src="./assets/js/hamburger-sidebar.js"></script>
-  <script src="./assets/js/dropdown-navbar.js"></script>
+  <script src="./assets/js/hamburgerSidebar.js"></script>
+  <script src="./assets/js/dropdownNavbar.js"></script>
+  <script src="./assets/js/athletes.js"></script>
 
 </body>
 
