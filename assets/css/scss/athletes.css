@@ -242,6 +242,7 @@ main {
   border: 1px solid #a7a7a7;
   border-radius: 6px;
   padding: 0.625rem;
+  background: #fff;
 }
 
 .form .input__container input.error,
@@ -549,6 +550,7 @@ main {
   outline: none;
   border: 1px solid #a7a7a7;
   padding: 0 2%;
+  background: #fff;
 }
 
 .query__options .query__filter--flush {
