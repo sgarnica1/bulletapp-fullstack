@@ -1,0 +1,50 @@
+@import "../config";
+@import "../global";
+
+.form {
+  display: grid;
+  gap: toRem(20);
+
+  .input__container {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: toRem(10);
+      font-weight: 500;
+    }
+    input,
+    select {
+      height: toRem(45);
+      outline: none;
+      border: 1px solid $color-alternative;
+      border-radius: 6px;
+      padding: toRem(10);
+    }
+
+    input.error,
+    select.error {
+      border-color: $color-error;
+    }
+  }
+
+  &__error {
+    display: none;
+  }
+
+  &__error.show {
+    color: $color-error;
+    margin-top: toRem(10);
+    font-size: toRem(16);
+    font-weight: 500;
+    display: block;
+    grid-column: 1 / -1;
+  }
+
+  button {
+    margin-top: toRem(20);
+    @extend %button;
+  }
+}
+
+@import "../media-queries/form-media-queries";

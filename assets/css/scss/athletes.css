@@ -1,5 +1,6 @@
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -9,22 +10,23 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -34,14 +36,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -51,10 +53,11 @@ main .intro__button a:hover {
 *:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
+  border-radius: 6px !important;
 }
 
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   box-shadow: none !important;
 }
 
@@ -92,6 +95,7 @@ ul {
 }
 
 main {
+  min-height: 100vh;
   background: #f5f5f5;
 }
 
@@ -105,8 +109,9 @@ main {
   max-width: 1450px;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -116,14 +121,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -133,10 +138,11 @@ main .intro__button a:hover {
 *:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
+  border-radius: 6px !important;
 }
 
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   box-shadow: none !important;
 }
 
@@ -174,6 +180,7 @@ ul {
 }
 
 main {
+  min-height: 100vh;
   background: #f5f5f5;
 }
 
@@ -187,8 +194,9 @@ main {
   max-width: 1450px;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -198,14 +206,466 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
 }
 
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form .input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .input__container label {
+  margin-bottom: 0.625rem;
+  font-weight: 500;
+}
+
+.form .input__container input,
+.form .input__container select {
+  height: 2.8125rem;
+  outline: none;
+  border: 1px solid #a7a7a7;
+  border-radius: 6px;
+  padding: 0.625rem;
+}
+
+.form .input__container input.error,
+.form .input__container select.error {
+  border-color: #de2316;
+}
+
+.form__error {
+  display: none;
+}
+
+.form__error.show {
+  color: #de2316;
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  grid-column: 1 / -1;
+}
+
+.form button {
+  margin-top: 1.25rem;
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 6px !important;
+}
+
+input:focus-visible,
+select:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.main-content__wrapper {
+  padding-top: 6.25rem;
+}
+
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1450px;
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+@media (min-width: 575px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 6px !important;
+}
+
+input:focus-visible,
+select:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.main-content__wrapper {
+  padding-top: 6.25rem;
+}
+
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1450px;
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.query {
+  width: 100%;
+}
+
+.query__form {
+  width: 100%;
+  gap: 2%;
+  grid-template-columns: 69% 29%;
+}
+
+.query__input-container {
+  position: relative;
+}
+
+.query__input-container input {
+  width: 100%;
+  height: 3.125rem;
+  border: 1px solid #a7a7a7;
+  outline: none;
+  border-radius: 0.375rem;
+  padding: 0 2.5rem;
+}
+
+.query__input-container input:focus-visible {
+  border-color: #a7d41f;
+}
+
+.query__input-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("../../icon/search.svg");
+  position: absolute;
+  left: 0.75rem;
+  top: 30%;
+}
+
+.query__options {
+  display: flex;
+  height: 3.125rem;
+  width: 100%;
+  gap: 0.625rem;
+}
+
+.query__options .query__option-container {
+  width: 50%;
+}
+
+.query__options select {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.375rem;
+  outline: none;
+  border: 1px solid #a7a7a7;
+  padding: 0 2%;
+}
+
+.query__options .query__filter--flush {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 0.375rem;
+  background: #a7a7a7;
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 6px !important;
+}
+
+input:focus-visible,
+select:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.main-content__wrapper {
+  padding-top: 6.25rem;
+}
+
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1450px;
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -282,7 +742,7 @@ main .intro__button a:hover {
 }
 
 .sidebar__navigation .navlist__wrapper::-webkit-scrollbar-thumb {
-  background: #93bb1c;
+  background: #a7d41f;
   border-radius: 6px;
 }
 
@@ -306,7 +766,7 @@ main .intro__button a:hover {
   width: 100%;
   height: 100%;
   letter-spacing: 0.0625rem;
-  font-weight: 300;
+  font-weight: 400;
   background: none;
   outline: none;
   border: none;
@@ -317,7 +777,7 @@ main .intro__button a:hover {
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item .navlist__link:hover, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn:hover {
-  color: #ade014;
+  color: #a7d41f;
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown {
@@ -378,15 +838,16 @@ main .intro__button a:hover {
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container .navlist__dropdown-element a:hover {
-  color: #93bb1c;
+  color: #a7d41f;
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-container.show {
   display: block;
 }
 
-.sidebar__navigation .sidebar__navlist .navlist__item.active a {
-  color: #93bb1c;
+.sidebar__navigation .sidebar__navlist .navlist__item.active a,
+.sidebar__navigation .sidebar__navlist .navlist__item.active p {
+  color: #a7d41f;
 }
 
 .sidebar__navigation .sidebar__navlist .navlist__subtitle {
@@ -443,7 +904,7 @@ main .intro__button a:hover {
   height: 2.5rem;
   border-radius: 50%;
   font-weight: 600;
-  background: #93bb1c;
+  background: #a7d41f;
 }
 
 .nav__container .nav__element .nav__user .nav__user--info button:focus {
@@ -466,8 +927,9 @@ main .intro__button a:hover {
   top: 40px !important;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -477,14 +939,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -494,10 +956,11 @@ main .intro__button a:hover {
 *:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
+  border-radius: 6px !important;
 }
 
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   box-shadow: none !important;
 }
 
@@ -535,6 +998,7 @@ ul {
 }
 
 main {
+  min-height: 100vh;
   background: #f5f5f5;
 }
 
@@ -548,8 +1012,9 @@ main {
   max-width: 1450px;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -559,14 +1024,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -581,12 +1046,13 @@ main .intro__description {
   max-width: 37.5rem;
 }
 
-main .intro__button a {
-  max-width: 14.375rem;
+main .intro__button {
+  display: flex;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -596,14 +1062,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -613,10 +1079,11 @@ main .intro__button a:hover {
 *:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
+  border-radius: 6px !important;
 }
 
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   box-shadow: none !important;
 }
 
@@ -654,6 +1121,7 @@ ul {
 }
 
 main {
+  min-height: 100vh;
   background: #f5f5f5;
 }
 
@@ -667,8 +1135,9 @@ main {
   max-width: 1450px;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -678,14 +1147,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -700,6 +1169,7 @@ main .intro__button a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   border-radius: 0.375rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #fff;
 }
 
@@ -716,8 +1186,7 @@ main .intro__button a:hover {
 }
 
 .athletes .athlete div {
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
   padding: 1.25rem;
 }
 
@@ -756,8 +1225,9 @@ main .intro__button a:hover {
   align-items: center;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -767,14 +1237,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -784,10 +1254,11 @@ main .intro__button a:hover {
 *:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
+  border-radius: 6px !important;
 }
 
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   box-shadow: none !important;
 }
 
@@ -825,6 +1296,7 @@ ul {
 }
 
 main {
+  min-height: 100vh;
   background: #f5f5f5;
 }
 
@@ -838,8 +1310,9 @@ main {
   max-width: 1450px;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -849,14 +1322,129 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
 }
 
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.new-athletes {
+  padding-bottom: 4.375rem;
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 6px !important;
+}
+
+input:focus-visible,
+select:focus-visible {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 6px;
+}
+
+label,
+a,
+button {
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+main {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.main-content__wrapper {
+  padding-top: 6.25rem;
+}
+
+.nav,
+.banner,
+.main-content__wrapper {
+  max-width: 1450px;
+}
+
+.form button, main .intro__button .intro__button-link {
+  display: flex;
+  max-height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
+  background-color: #93bb1c;
+}
+
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -870,8 +1458,9 @@ main .intro__button a:hover {
   }
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -881,14 +1470,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -898,10 +1487,11 @@ main .intro__button a:hover {
 *:focus-visible {
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
-  border-radius: 2px !important;
+  border-radius: 6px !important;
 }
 
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   box-shadow: none !important;
 }
 
@@ -939,6 +1529,7 @@ ul {
 }
 
 main {
+  min-height: 100vh;
   background: #f5f5f5;
 }
 
@@ -952,8 +1543,9 @@ main {
   max-width: 1450px;
 }
 
-main .intro__button a {
+.form button, main .intro__button .intro__button-link {
   display: flex;
+  max-height: 3.125rem;
   justify-content: center;
   align-items: center;
   padding: 0.8em 3em;
@@ -963,14 +1555,14 @@ main .intro__button a {
   font-size: 1rem;
   border-radius: 0.375rem;
   color: #000;
+  background-color: #a7d41f;
+}
+
+.form button:hover, main .intro__button .intro__button-link:hover {
   background-color: #93bb1c;
 }
 
-main .intro__button a:hover {
-  background-color: #ade014;
-}
-
-.nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
+.query__input-icon, .nav__close-btn span, .sidebar__navigation .sidebar__navlist .navlist__item.navlist__dropdown .navlist__dropdown-btn span {
   display: inline-block;
   background-position: center !important;
   background-repeat: no-repeat !important;
