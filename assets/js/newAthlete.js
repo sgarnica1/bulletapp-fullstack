@@ -9,18 +9,6 @@ class Athlete {
     this.group = group,
     this.createdDate = new Date()
   }
-
-  createdOn() {
-    const date = new Date()
-    const year = date.getFullYear()
-    let month = date.getMonth() + 1
-    const day = date.getDate()
-    if (month < 10) {
-      month = `0${month}`
-    }
-    this.createdDate = `${day}/${month}/${year}`
-    return this.createdDate
-  }
 }
 
 let athletes = []
