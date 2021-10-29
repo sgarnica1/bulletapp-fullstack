@@ -1,9 +1,0 @@
-@import "../config";
-@import "../global";
-
-@media (min-width: 575px) {
-  .form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

@@ -1,0 +1,12 @@
+@import "./global";
+@import "./config";
+@import "./utils/form";
+@import "./utils/query";
+@import "./dashboard/nav";
+@import "./dashboard/intro";
+@import "./athletes/athletesList";
+@import "./athletes/newAthlete";
+
+// MEDIA QUERIES
+@import "./media-queries/athletes-media-queries";
+@import "./media-queries/dashboard-media-queries";

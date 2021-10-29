@@ -1,0 +1,266 @@
+// VARIABLES
+$color-primary: #4e4e4e;
+// $color-secondary: #93bb1c;
+$color-secondary: #a7d41f;
+$color-secondary-hover: #4e4e4e;
+$color-dark: #000;
+$color-light: #fff;
+$color-background: #f5f5f5;
+$color-background-linear: linear-gradient(#f5f5f5, #dedede);
+$color-alternative: #a7a7a7;
+$color-alternative-2: #767676;
+$color-error: #de2316;
+$linear-gradient-1: linear-gradient(to left, #0f0f0f, #333333);
+$linear-gradient-2: linear-gradient(to left, #4e4e4e, #333333);
+$linear-gradient-header: linear-gradient(to left, #86aa19, #93bb1c);
+$font-primary: "DM Sans", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+$max-width: 1280px;
+$focus-box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+$hover-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+// FUNCTIONS
+
+// PX to REM
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+// TEMPLATES
+%button {
+  display: flex;
+  max-height: toRem(50);
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 3em;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  font-size: toRem(16);
+  border-radius: toRem(6);
+  color: $color-dark;
+  background-color: $color-secondary;
+}
+
+%button:hover {
+  background-color: #93bb1c;
+  // box-shadow: $hover-box-shadow;
+}
+
+%icon {
+  display: inline-block;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+%stats-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 toRem(20);
+  margin-bottom: toRem(20);
+  height: toRem(115);
+  width: 100%;
+  border-radius: 6px;
+  background-color: $color-light;
+  box-shadow: $hover-box-shadow;
+  transition: ease 0.5s;
+  transform: translateY(0px);
+  cursor: pointer;
+}
+
+%stats-card:hover {
+  transform: translateY(-5px);
+  transition: ease 0.5s;
+  box-shadow: 0px 4px 4px $color-secondary;
+}
+
+%info-card {
+  border-radius: 6px;
+  margin-bottom: toRem(35);
+  background: $color-light;
+  height: toRem(400);
+  box-shadow: $hover-box-shadow;
+}
+
+%card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $linear-gradient-header;
+  height: toRem(50);
+  padding: toRem(5) toRem(10);
+
+  .info-card__title {
+    margin-bottom: 0;
+    font-size: toRem(18);
+    font-weight: 500;
+    color: $color-light;
+  }
+
+  .info-card__button span {
+    width: toRem(15);
+    height: toRem(15);
+    background: url("../../icon/right-arrow.svg");
+    @extend %icon;
+  }
+
+  select {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: none;
+    color: $color-light;
+
+    option {
+      -webkit-appearance: none;
+      color: $color-primary;
+      background: $color-background;
+    }
+  }
+  select:focus {
+    background: transparent;
+  }
+}
+
+%card-athlete-layout-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.125rem;
+
+  .athlete__name {
+    margin-bottom: 0;
+  }
+  .athelte__link span {
+    width: toRem(15);
+    height: toRem(15);
+    background: url("../../icon/right-arrow-dark.svg");
+    @extend %icon;
+  }
+}
+
+%card-athlete-layout-payments {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  align-items: center;
+  height: toRem(50);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .info-card__indicator {
+    color: $color-dark;
+    font-weight: 500;
+    font-size: toRem(15);
+    text-transform: uppercase;
+  }
+  .athlete__name-container {
+    width: 90%;
+    overflow-x: hidden;
+
+    p {
+      width: toRem(300);
+    }
+  }
+}
+
+%plans-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  color: $color-light;
+  box-shadow: $hover-box-shadow;
+  position: relative;
+  overflow: hidden;
+
+  .plans-card__header {
+    width: 100%;
+    height: toRem(55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $color-light;
+
+    .plans-card__title {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-weight: toRem(20);
+    }
+  }
+
+  .plans-card__body {
+    height: toRem(120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .plans-card__price {
+      font-size: toRem(36);
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+
+  .plans-card__footer {
+    width: 100%;
+    height: toRem(55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 toRem(20);
+
+    &-title {
+      margin-bottom: 0;
+      font-size: toRem(18);
+      font-weight: 300;
+    }
+    &-stats {
+      color: $color-secondary;
+    }
+  }
+}
+
+%tools-card {
+  height: toRem(200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: $hover-box-shadow;
+  z-index: 1;
+  position: relative;
+  gap: toRem(15);
+
+  .tools__card-title {
+    color: $color-light;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: toRem(22);
+  }
+}
+
+%tools-card::after {
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+%tools-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}

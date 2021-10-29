@@ -1,0 +1,11 @@
+@import "../config";
+@import "../global";
+
+@media (min-width: 1300px) {
+  .athletes {
+    &__container,
+    &__container .athlete div {
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<%- include('../partials/sidebar.ejs') %>
+  <!-- MAIN -->
+  <main>
+    <div class="main-content__wrapper px-4 px-md-5">
+
+      <!-- INTRO -->
+      <section class="intro mb-5 d-block d-md-grid">
+        <div class="intro__info">
+          <h2 class="intro__title fw-bold mb-4">Atletas</h2>
+          <p class="intro__description mb-5 mb-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+            tempor incididunt ut labore et dolore magna aliqu</p>
+        </div>
+        <div class="intro__button">
+          <a href="/athletes/new" class="intro__button-link">Añadir Atleta</a>
+        </div>
+      </section>
+
+      <!-- SEARCH FORM -->
+      <section class="query">
+        <form action="" class="query__form d-block d-md-grid" autocomplete="off">
+          <div class="query__main">
+            <div class="query__search-bar d-block d-md-grid">
+              <div class="query__input-container query__input-container--main mb-4">
+                <span class="query__input-icon"></span>
+                <input type="text" name="athlete-name-search" id="athlete-name-search" placeholder="Buscar atleta">
+              </div>
+            </div>
+          </div>
+          <div class="query__options">
+            <div class="query__option-container query__option--orderby">
+              <select name="orderby" id="orderby">
+                <option value="ascending-date">Ordenar por</option>
+                <option value="ascending-name">A-Z</option>
+                <option value="descending-name">Z-A</option>
+                <option value="ascending-date">Más reciente</option>
+                <option value="descending-date">Más antiguo</option>
+              </select>
+            </div>
+            <div class="query__option-container query__option--flush-filters">
+              <button type="reset" class="query__filter--flush">Borrar filtros</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+
+      <!-- ATHLETES -->
+      <section class="athletes">
+        <div class="athletes__no-results d-none">
+          <h3>No hay resultados</h3>
+        </div>
+        <div class="athletes__container">
+          <div class="athletes__header-container">
+            <article class="athlete athletes__header">
+              <div class="athlete__name">Nombre</div>
+              <div class="athlete__email">Email</div>
+              <div class="athlete__phone">Teléfono</div>
+              <div class="athlete__plan">Plan</div>
+              <div class="athlete__group">Clase</div>
+              <div class="athlete__date">Ingreso</div>
+            </article>
+          </div>
+          <div class="athletes__body">
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  </div>
+  </div>

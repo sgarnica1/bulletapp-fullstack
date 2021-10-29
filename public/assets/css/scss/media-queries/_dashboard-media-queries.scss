@@ -1,0 +1,136 @@
+@import "../config";
+@import "../global";
+
+@media (min-width: 550px) {
+  .banner {
+    .banner__statistics {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: toRem(20);
+
+      .form__filter__button {
+        width: toRem(50);
+      }
+    }
+
+    .banner__filter form .form__filter__button {
+      width: toRem(50);
+    }
+  }
+
+  .plans-card__container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .tools-card__container .tools__card .tools__card-title {
+    font-size: toRem(32);
+  }
+}
+
+@media (min-width: 575px) {
+  .banner {
+    &__intro {
+      .banner__filter {
+        form {
+          grid-template-columns: repeat(3, auto);
+          gap: toRem(10);
+
+          .input__container {
+            max-width: 100%;
+          }
+          .form__filter__button {
+            width: toRem(50);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .tools-card__container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 18% 82%;
+  }
+
+  .nav {
+    margin-left: 18%;
+  }
+
+  .nav__close-btn {
+    display: none;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  .nav {
+    &__container {
+      .nav__element {
+        .current-date {
+          display: inline-block;
+          font-family: $font-secondary;
+        }
+      }
+    }
+  }
+
+  .navlist__wrapper {
+    margin-top: 25px;
+  }
+
+  .banner .banner__intro {
+    grid-template-columns: 45% 55%;
+  }
+  .banner .banner__intro .banner__filter {
+    form {
+      grid-template-columns: 40% 40% 10%;
+    }
+  }
+
+  .plans-card__container {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (min-width: 1300px) {
+  .sidebar {
+    max-width: 100%;
+  }
+
+  .banner {
+    .banner__intro {
+      grid-template-columns: 35% 65%;
+
+      .banner__filter {
+        max-width: toRem(650);
+        justify-self: self-end;
+      }
+    }
+
+    .banner__statistics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .statistics__card {
+        height: toRem(100);
+      }
+    }
+  }
+
+  .tools-card__container .tools__card .tools__card-title {
+    font-size: toRem(42);
+  }
+  .tools-card__container .tools__card--icon span {
+    width: toRem(100);
+    height: toRem(100);
+  }
+}

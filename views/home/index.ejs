@@ -1,0 +1,351 @@
+<%- include('../partials/sidebar.ejs') %>
+
+  <!-- BANNER -->
+  <div class="content__banner">
+    <section class="banner  pt-3 pb-4 px-4 px-md-5">
+      <div class="banner__intro d-lg-grid">
+        <div class="banner__welcome">
+          <h1 class="banner__user fw-bold mb-3">Bienvenido <span class="banner__username">Sergio</span></h1>
+          <p>Resumen mensual</p>
+        </div>
+        <div class="banner__filter d-lg-flex justify-content-end">
+          <form action="" class="form__filter d-grid">
+            <div class="input__container">
+              <span class="input__icon location"></span>
+              <select name="filter-location" id="filter-location" class="input__element">
+                <option value="juriquilla">Juriquilla</option>
+                <option value="zibata">Zibatá</option>
+                <option value="grand-reserva">Grand Reserva</option>
+              </select>
+            </div>
+            <div class="input__container">
+              <span class="input__icon calendar"></span>
+              <input type="month" id="filter-month" name="filter-month" value="">
+            </div>
+            <button type="submit" class="form__filter__button"><span></span></button>
+          </form>
+        </div>
+      </div>
+      <div class="banner__statistics">
+        <article class="statistics__card">
+          <a href="#">
+            <div class="statistics__info">
+              <p class="statistics__title">Ingresos Mensuales</p>
+              <span class="statistics__number" id="ingresos-mensuales">
+                $50,200.00
+              </span>
+            </div>
+            <a href="#" class="statistics__button">
+              <span></span>
+            </a>
+          </a>
+        </article>
+        <article class="statistics__card">
+          <a href="#">
+            <div class="statistics__info">
+              <p class="statistics__title">Ingresos Productos</p>
+              <span class="statistics__number" id="ingresos-productos">
+                $7,520.00
+              </span>
+            </div>
+            <a href="#" class="statistics__button">
+              <span></span>
+            </a>
+          </a>
+        </article>
+        <article class="statistics__card">
+          <a href="#">
+            <div class="statistics__info">
+              <p class="statistics__title">Pagos Totales</p>
+              <span class="statistics__number" id="pagos-totales">
+                132
+              </span>
+            </div>
+            <a href="#" class="statistics__button">
+              <span></span>
+            </a>
+          </a>
+        </article>
+        <article class="statistics__card">
+          <a href="#">
+            <div class="statistics__info">
+              <p class="statistics__title">Atletas Inscritos</p>
+              <span class="statistics__number" id="atletas-inscritos">
+                157
+              </span>
+            </div>
+            <a href="#" class="statistics__button">
+              <span></span>
+            </a>
+          </a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+    <div class="main-content__wrapper px-4 px-md-5">
+
+      <!-- ATHLETES DATA -->
+      <section class="athletes__container d-md-grid mb-5 mb-lg-3">
+        <div class="payments info-card">
+          <div class="info-card__banner info-card__header">
+            <h3 class="info-card__title">Pagos Realizados</h3>
+            <a href="#" class="info-card__button">
+              <span></span>
+            </a>
+          </div>
+          <div class="info-card__below-header info-card__info-layout">
+            <p class="info-card__indicator">Atleta</p>
+            <p class="info-card__indicator">Plan</p>
+            <p class="info-card__indicator">Pago</p>
+          </div>
+          <div class="info-card__athletes">
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Daniel Minguez</p>
+              </div>
+              <p class="athlete__plan">3 días</p>
+              <p class="athelte__payment">$900</p>
+            </div>
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Noah Calleja</p>
+              </div>
+              <p class="athlete__plan">5 días</p>
+              <p class="athelte__payment">$1,100</p>
+            </div>
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Maria Isabel Fraile</p>
+              </div>
+              <p class="athlete__plan">3 días</p>
+              <p class="athelte__payment">$900</p>
+            </div>
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Saul Ferreira</p>
+              </div>
+              <p class="athlete__plan">Pareja</p>
+              <p class="athelte__payment">$1,650</p>
+            </div>
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Juan Sola</p>
+              </div>
+              <p class="athlete__plan">3 días</p>
+              <p class="athelte__payment">$900</p>
+            </div>
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Maria Amparo de Haro</p>
+              </div>
+              <p class="athlete__plan">5 días</p>
+              <p class="athelte__payment">$1,100</p>
+            </div>
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Felix Uriarte</p>
+              </div>
+              <p class="athlete__plan">Kids</p>
+              <p class="athelte__payment">$900</p>
+            </div>
+            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+              <div class="athlete__name-container">
+                <p class="athlete__name">Aurelia Arribas</p>
+              </div>
+              <p class="athlete__plan">5 días</p>
+              <p class="athelte__payment">$1,100</p>
+            </div>
+          </div>
+        </div>
+        <div class="class-athletes info-card">
+          <div class="info-card__banner info-card__header">
+            <h3 class="info-card__title">Atletas por clase</h3>
+            <form action="">
+              <select name="" id="">
+                <option value="6:00am">6:00am</option>
+                <option value="7:30am">7:30am</option>
+                <option value="8:30am">8:30am</option>
+                <option value="9:30am">9:30am</option>
+                <option value="6:00pm">6:00pm</option>
+                <option value="7:00pm">7:00pm</option>
+                <option value="8:00pm">8:00pm</option>
+                <option value="9:00pm">9:00pm</option>
+              </select>
+            </form>
+          </div>
+          <div class="info-card__athletes">
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Daniel Minguez</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Maria Amparo de Haro</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Aurelia Arribas</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Barbara Cabezas</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Christopher Huerta</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Martina Gallego</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Eloisa Melian</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Cristobal Calatayud</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+            <div class="info-card__athlete info-card__athlete--class">
+              <p class="athlete__name">Humberto Amador</p>
+              <a href="#" class="athelte__link">
+                <span></span>
+              </a>
+            </div>
+          </div>
+          <div class="info-card__banner info-card__footer">
+            <h3 class="info-card__title">Ver clase completa</h3>
+            <a href="#" class="info-card__button">
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLANS -->
+      <section class="plans__container dashboard__container pt-4 pt-lg-0 mb-5">
+        <div class="container__header">
+          <h4 class="container__title">Planes</h4>
+        </div>
+        <div class="plans-card__container d-grid">
+          <article class="plans-card">
+            <div class="plans-card__header">
+              <h5 class="plans-card__title">5 Días</h5>
+            </div>
+            <div class="plans-card__body">
+              <p class="plans-card__price">$1,100.00</p>
+            </div>
+            <div class="plans-card__footer">
+              <h4 class="plans-card__footer-title">Atletas inscritos</h4>
+              <span class="plans-card__footer-stats">52</span>
+            </div>
+          </article>
+          <article class="plans-card">
+            <div class="plans-card__header">
+              <h5 class="plans-card__title">3 Días</h5>
+            </div>
+            <div class="plans-card__body">
+              <p class="plans-card__price">$900.00</p>
+            </div>
+            <div class="plans-card__footer">
+              <h4 class="plans-card__footer-title">Atletas inscritos</h4>
+              <span class="plans-card__footer-stats">82</span>
+            </div>
+          </article>
+          <article class="plans-card">
+            <div class="plans-card__header">
+              <h5 class="plans-card__title">Pareja</h5>
+            </div>
+            <div class="plans-card__body">
+              <p class="plans-card__price">$1,650.00</p>
+            </div>
+            <div class="plans-card__footer">
+              <h4 class="plans-card__footer-title">Atletas inscritos</h4>
+              <span class="plans-card__footer-stats">37</span>
+            </div>
+          </article>
+          <article class="plans-card">
+            <div class="plans-card__header">
+              <h5 class="plans-card__title">Familiar</h5>
+            </div>
+            <div class="plans-card__body">
+              <p class="plans-card__price">$800.00</p>
+            </div>
+            <div class="plans-card__footer">
+              <h4 class="plans-card__footer-title">Atletas inscritos</h4>
+              <span class="plans-card__footer-stats">22</span>
+            </div>
+          </article>
+          <article class="plans-card">
+            <div class="plans-card__header">
+              <h5 class="plans-card__title">Kids</h5>
+            </div>
+            <div class="plans-card__body">
+              <p class="plans-card__price">$900.00</p>
+            </div>
+            <div class="plans-card__footer">
+              <h4 class="plans-card__footer-title">Atletas inscritos</h4>
+              <span class="plans-card__footer-stats">43</span>
+            </div>
+          </article>
+          <article class="plans-card">
+            <div class="plans-card__header">
+              <h5 class="plans-card__title">Inscripción</h5>
+            </div>
+            <div class="plans-card__body">
+              <p class="plans-card__price">$1,100.00</p>
+            </div>
+            <div class="plans-card__footer">
+              <span class="plans-card__footer-icon"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section class="tools__container dashboard__container pb-5 pt-4 pt-lg-0">
+        <div class="container__header">
+          <h4 class="container__title">Herramientas</h4>
+        </div>
+        <div class="tools-card__container d-grid">
+          <article>
+            <a href="#" class="tools__card tools__card--programming tools__card--icon">
+              <p class="tools__card-title">
+                Programación
+              </p>
+              <span class="tools__card-icon"></span>
+            </a>
+          </article>
+          <article>
+            <a href="#" class="tools__card tools__card--video">
+              <p class="tools__card-title">
+                Videos Tutoriales
+              </p>
+            </a>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  </div>
+  </div>
