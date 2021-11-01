@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
-const stylesheetPath = "./assets/css/scss/login.css";
-const jsPath = "./assets/js/login.js";
-
 router.get("/", (req, res) => {
-  res.locals.title = "Iniciar Sesión - Bullet App";
-  res.locals.stylesheetPath = stylesheetPath;
-  res.locals.jsPath = jsPath;
-  res.render("index");
+  // res.locals.title = "Iniciar Sesión - Bullet App";
+  res.render("index", {
+    title: "Iniciar Sesión - Bullet App",
+    stylesheetPath: "./assets/css/scss/login.css",
+    jsPath: "./assets/js/login.js",
+  });
+  
 });
 
 module.exports = router;

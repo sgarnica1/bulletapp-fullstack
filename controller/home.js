@@ -1,14 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const stylesheetPath = "./assets/css/scss/home.css";
-const jsPath = "./assets/js/home.js";
-
 router.get("/", (req, res) => {
-  res.locals.title = "Home - Bullet App";
-  res.locals.stylesheetPath = stylesheetPath;
-  res.locals.jsPath = jsPath;
-  res.render("home/index");
+  res.render("home/index", {
+    title: "Home - Bullet App",
+    stylesheetPath: "./assets/css/scss/home.css",
+    jsPath: "./assets/js/home.js",
+  });
 });
 
 module.exports = router;

@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-  
 
 // Get all athletes
 router.get("/", (req, res) => {
-  res.locals.title = "Atletas";
-  res.locals.stylesheetPath = "./assets/css/scss/athletes.css";
-  res.locals.jsPath = "./assets/js/athletes.js";
-  res.render("athletes/index");
+  res.render("athletes/index", {
+    title: "Atletas",
+    stylesheetPath: "./assets/css/scss/athletes.css",
+    jsPath: "./assets/js/athletes.js",
+  });
 });
 
 // New athlete
@@ -17,7 +17,6 @@ router.get("/new", (req, res) => {
   res.locals.jsPath = "../assets/js/newAthlete.js";
   res.render("athletes/new");
 });
-
 
 // Add new athlete
 router.post("/new", (req, res) => {

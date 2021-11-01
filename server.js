@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== "production") {
 const express = require("express");
 const app = express();
 const expressLayouts = require("express-ejs-layouts");
-port = 3000;
+port = 4000;
 app.use(express.json());
 
 // ROUTES
@@ -24,6 +24,14 @@ app.use(express.static("public"));
 app.use("/", indexRouter);
 app.use("/home", homeRouter);
 app.use("/athletes", athletesRouter);
+
+// 404 Error
+app.use((req, res) => {
+  res.locals.title = "Error 404";
+  res.locals.stylesheetPath = "./assets/css/scss/home.css";
+  res.locals.jsPath = "./assets/js/home.js";
+  res.status(404).render("404/index");
+});
 
 app.listen(process.env.PORT || port, () => {
   console.log(`App listening on port ${port}`);
