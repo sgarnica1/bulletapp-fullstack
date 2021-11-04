@@ -20,26 +20,26 @@
 
       <!-- NEW ATHLETE FORM -->
       <section class="new-athletes">
-        <form action="" class="form new-athlete__form" id="new-athlete-form" novalidate autocomplete="off">
+        <form action="/athletes" method="POST" class="form new-athlete__form" id="new-athlete-form" autocomplete="off">
           <div class="input__container input__container--firstname">
             <label for="firstname">Nombre</label>
-            <input type="text" name="firstname" id="firstname" placeholder="Nombre(s)">
+            <input type="text" name="firstname" id="firstname" placeholder="Nombre(s)" required>
           </div>
           <div class="input__container input__container--lastname">
             <label for="lastname">Apellidos</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Apellidos">
+            <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
           </div>
           <div class="input__container input__container--email">
             <label for="email">Correo electrónico</label>
-            <input type="email" name="email" id="email" placeholder="usuario@correo.com">
+            <input type="email" name="email" id="email" placeholder="usuario@correo.com" required>
           </div>
-          <div class="input__container input__container--phoneNumber">
-            <label for="phoneNumber">Número de teléfono</label>
-            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Número de teléfono">
+          <div class="input__container input__container--phonenumber">
+            <label for="phonenumber">Número de teléfono</label>
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="Número de teléfono" required>
           </div>
           <div class="input__container input__container--plan">
             <label for="plan">Plan</label>
-            <select name="plan" id="plan">
+            <select name="plan" id="plan" required>
               <option value="">Selecciona un plan</option>
               <option value="5D">5D</option>
               <option value="3D">3D</option>
@@ -50,7 +50,7 @@
           </div>
           <div class="input__container input__container--group">
             <label for="group">Clase</label>
-            <select name="group" id="group">
+            <select name="group" id="group" required>
               <option value="">Selecciona una clase</option>
               <option value="6:00am">6:00am</option>
               <option value="7:30am">7:30am</option>

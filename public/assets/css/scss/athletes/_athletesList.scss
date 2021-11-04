@@ -31,6 +31,13 @@
     &__name {
       min-width: toRem(250);
       max-width: toRem(250);
+
+      a {
+        color: $color-primary;
+      }
+      a:hover {
+        color: $color-dark;
+      }
     }
     &__email {
       min-width: toRem(250);

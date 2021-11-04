@@ -4,35 +4,42 @@ if (process.env.NODE_ENV !== "production") {
 
 const express = require("express");
 const app = express();
+const port = 3000;
 const expressLayouts = require("express-ejs-layouts");
-port = 4000;
-app.use(express.json());
 
 // ROUTES
-const indexRouter = require("./controller/index");
-const homeRouter = require("./controller/home");
-const athletesRouter = require("./controller/athletes");
+const indexRouter = require("./routes/index");
+const homeRouter = require("./routes/home");
+const athletesRouter = require("./routes/athletes");
 
 // SET VIEW ENGINE
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views/");
 app.set("layout", "layouts/layout");
 app.use(expressLayouts);
-app.use(express.static("public"));
 
-// USE ROUTES
+// MIDDLEWARE
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// DATABASE
+const mongoose = require("mongoose");
+const db = mongoose.connect(process.env.DATABASE_URL);
+db.then((res) =>
+  app.listen(process.env.PORT || port, () => console.log("Connected"))
+);
+db.catch((err) => console.log(err));
+
+// ROUTES
 app.use("/", indexRouter);
 app.use("/home", homeRouter);
 app.use("/athletes", athletesRouter);
 
-// 404 Error
+// 404 ERROR
 app.use((req, res) => {
   res.locals.title = "Error 404";
   res.locals.stylesheetPath = "./assets/css/scss/home.css";
-  res.locals.jsPath = "./assets/js/home.js";
+  res.locals.jsPath = "";
   res.status(404).render("404/index");
-});
-
-app.listen(process.env.PORT || port, () => {
-  console.log(`App listening on port ${port}`);
 });

@@ -102,62 +102,17 @@
             <p class="info-card__indicator">Pago</p>
           </div>
           <div class="info-card__athletes">
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Daniel Minguez</p>
-              </div>
-              <p class="athlete__plan">3 días</p>
-              <p class="athelte__payment">$900</p>
-            </div>
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Noah Calleja</p>
-              </div>
-              <p class="athlete__plan">5 días</p>
-              <p class="athelte__payment">$1,100</p>
-            </div>
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Maria Isabel Fraile</p>
-              </div>
-              <p class="athlete__plan">3 días</p>
-              <p class="athelte__payment">$900</p>
-            </div>
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Saul Ferreira</p>
-              </div>
-              <p class="athlete__plan">Pareja</p>
-              <p class="athelte__payment">$1,650</p>
-            </div>
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Juan Sola</p>
-              </div>
-              <p class="athlete__plan">3 días</p>
-              <p class="athelte__payment">$900</p>
-            </div>
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Maria Amparo de Haro</p>
-              </div>
-              <p class="athlete__plan">5 días</p>
-              <p class="athelte__payment">$1,100</p>
-            </div>
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Felix Uriarte</p>
-              </div>
-              <p class="athlete__plan">Kids</p>
-              <p class="athelte__payment">$900</p>
-            </div>
-            <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
-              <div class="athlete__name-container">
-                <p class="athlete__name">Aurelia Arribas</p>
-              </div>
-              <p class="athlete__plan">5 días</p>
-              <p class="athelte__payment">$1,100</p>
-            </div>
+            <% if(athletes.length> 0) { %>
+              <% athletes.forEach(athlete => { %> 
+                <div class="info-card__athlete info-card__athlete--payment info-card__info-layout">
+                  <div class="athlete__name-container">
+                    <p class="athlete__name"><%= athlete.firstname %> <%= athlete.lastname %></p>
+                  </div>
+                  <p class="athlete__plan"><%= athlete.plan %></p>
+                  <p class="athelte__payment">$900</p>
+                </div>
+              <% }) %>  
+            <% } %> 
           </div>
         </div>
         <div class="class-athletes info-card">
@@ -177,60 +132,16 @@
             </form>
           </div>
           <div class="info-card__athletes">
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Daniel Minguez</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Maria Amparo de Haro</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Aurelia Arribas</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Barbara Cabezas</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Christopher Huerta</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Martina Gallego</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Eloisa Melian</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Cristobal Calatayud</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
-            <div class="info-card__athlete info-card__athlete--class">
-              <p class="athlete__name">Humberto Amador</p>
-              <a href="#" class="athelte__link">
-                <span></span>
-              </a>
-            </div>
+            <% if(athletes.length> 0) { %>
+              <% athletes.forEach(athlete => { %> 
+                <div class="info-card__athlete info-card__athlete--class">
+                  <p class="athlete__name"><%= athlete.firstname %> <%= athlete.lastname %></p>
+                  <a href="/athletes/<%= athlete._id %> " class="athelte__link">
+                    <span></span>
+                  </a>
+                </div>
+              <% }) %>  
+            <% } %> 
           </div>
           <div class="info-card__banner info-card__footer">
             <h3 class="info-card__title">Ver clase completa</h3>

@@ -5,39 +5,22 @@ class Component {
     return emailRegex.test(String(email).toLowerCase());
   }
 
-  validatePhoneNumber(phoneNumber) {
+  validatePhonenumber(phonenumber) {
     const phoneRegex = /^\d{10,12}$/im;
-    return phoneRegex.test(String(phoneNumber));
+    return phoneRegex.test(String(phonenumber));
   }
 }
 
 class Athlete {
-  constructor(firstname, lastname, email, phoneNumber, plan, group) {
+  constructor(firstname, lastname, email, phonenumber, plan, group) {
     this.id = Math.random() * 1000000000000000000;
     (this.firstname = firstname),
       (this.lastname = lastname),
       (this.email = email),
-      (this.phoneNumber = phoneNumber),
+      (this.phonenumber = phonenumber),
       (this.plan = plan),
       (this.group = group),
       (this.createdDate = new Date());
-  }
-}
-
-export class Athletes {
-  athletes = [];
-
-  constructor() {
-    this.getAthletesList();
-  }
-
-  getAthletesList() {
-    if (localStorage.getItem("athletes") != null) {
-      const athletesList = localStorage.getItem("athletes");
-      this.athletes = JSON.parse(athletesList);
-    }
-    console.log(this.athletes);
-    return this.athletes;
   }
 }
 
@@ -47,48 +30,53 @@ export class AthleteForm extends Component {
     this.createNewAthleteForm = document.getElementById(athleteFormId);
     this.formElements = this.createNewAthleteForm.elements;
     this.errorMessage = document.querySelector(`.${formErrorClass}`);
-    this.submitAthlete(athletesList);
+    this.submitAthlete();
+  }
+
+  prevent(event) {
+    event.preventDefault();
   }
 
   submitAthlete(athletesList) {
     this.createNewAthleteForm.addEventListener("submit", (event) => {
-      event.preventDefault();
+      prevent(event);
 
       const firstname = this.formElements.firstname.value.trim();
       const lastname = this.formElements.lastname.value.trim();
       const email = this.formElements.email.value.trim();
-      const phoneNumber = this.formElements.phoneNumber.value.trim();
+      const phonenumber = this.formElements.phonenumber.value.trim();
       const plan = this.formElements.plan.value.trim();
       const group = this.formElements.group.value.trim();
       const validEmail = this.validateEmail(email);
-      const validPhoneNumber = this.validatePhoneNumber(phoneNumber);
+      const validPhonenumber = this.validatePhonenumber(phonenumber);
 
       if (
         firstname == "" ||
         lastname == "" ||
         validEmail == "" ||
-        validPhoneNumber == "" ||
+        validPhonenumber == "" ||
         plan == "" ||
         group == ""
       ) {
-        this.addErrorBorder(validEmail, validPhoneNumber);
+        this.addErrorBorder(validEmail, validPhonenumber);
+        prevent(event);
       } else {
         this.removeErrorBorder();
         for (let element of this.formElements) {
           element.value = "";
         }
-        let athlete = new Athlete(
-          firstname,
-          lastname,
-          email,
-          phoneNumber,
-          plan,
-          group
-        );
-        athletesList.push(athlete);
-        console.log(athlete);
-        localStorage.setItem("athletes", JSON.stringify(athletesList));
-        window.location.replace("/athletes");
+        // let athlete = new Athlete(
+        //   firstname,
+        //   lastname,
+        //   email,
+        //   phonenumber,
+        //   plan,
+        //   group
+        // );
+        // athletesList.push(athlete);
+        // console.log(athlete);
+        // localStorage.setItem("athletes", JSON.stringify(athletesList));
+        // window.location.replace("/athletes");
       }
     });
   }
@@ -105,7 +93,7 @@ export class AthleteForm extends Component {
 
     email == false ? this.formElements.email.classList.add("error") : null;
     phone == false
-      ? this.formElements.phoneNumber.classList.add("error")
+      ? this.formElements.phonenumber.classList.add("error")
       : null;
   }
 
@@ -124,5 +112,3 @@ export class AthleteForm extends Component {
     this.errorMessage.classList.remove("show");
   }
 }
-
-

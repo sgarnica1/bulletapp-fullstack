@@ -1197,6 +1197,14 @@ main {
   max-width: 15.625rem;
 }
 
+.athletes .athlete__name a {
+  color: #4e4e4e;
+}
+
+.athletes .athlete__name a:hover {
+  color: #000;
+}
+
 .athletes .athlete__email {
   min-width: 15.625rem;
   max-width: 15.625rem;
