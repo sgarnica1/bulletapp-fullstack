@@ -1,0 +1,12 @@
+@import "../config";
+@import "../global";
+
+main .intro .intro__button {
+  &-link.delete-athlete {
+    background-color: #c44b3f !important;
+    color: $color-light;
+  }
+  &-link.delete-athlete:hover {
+    box-shadow: $hover-box-shadow;
+  }
+}

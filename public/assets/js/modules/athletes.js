@@ -1,11 +1,12 @@
-export class Athletes {
+export class Athlete {
   constructor(deleteItemButtonId) {
     this.delete(deleteItemButtonId);
   }
+
   delete(deleteItemButtonId) {
     const deleteBtns = document.querySelectorAll(`#${deleteItemButtonId}`);
     for (const btn of deleteBtns) {
-      btn.addEventListener("click", async (event) => {
+      btn.addEventListener("click", async () => {
         const endpoint = `/athletes/${btn.dataset.doc}`;
         try {
           const response = await fetch(endpoint, { method: "DELETE" });

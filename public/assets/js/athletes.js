@@ -1,4 +1,3 @@
-import { Athletes } from "./modules/athletes.js";
 import { setDate } from "./modules/setDate.js";
 import { Sidebar } from "./modules/sidebar.js";
 
@@ -11,9 +10,6 @@ class App {
       "navlist__dropdown"
     );
     setDate();
-    new Athletes(
-      "delete-athlete"
-    );
   }
 }
 

@@ -1,4 +1,3 @@
-const express = require("express");
 const Athlete = require("../model/athlete");
 
 // GET ALL ATHLETES
@@ -22,6 +21,7 @@ const create_get = (req, res) => {
     title: "Añadir Atleta",
     stylesheetPath: "../assets/css/scss/athletes.css",
     jsPath: "../assets/js/newAthlete.js",
+    athlete: new Athlete(),
   });
 };
 
@@ -43,29 +43,75 @@ const create_post = async (req, res) => {
 
 // GET SINGLE ATHLETE
 const single = async (req, res) => {
-  const id = req.params.id;
+  res.render("athletes/edit", {
+    title: "Editar Atleta",
+    stylesheetPath: "../assets/css/scss/athletes.css",
+    jsPath: "../assets/js/editAthlete.js",
+    athlete: res.athlete,
+  });
+};
+
+// EDIT ATHLETE
+const edit = async (req, res) => {
+  if (req.body.firstname != null) {
+    res.athlete.firstname = req.body.firstname;
+  }
+  if (req.body.lastname != null) {
+    res.athlete.lastname = req.body.lastname;
+  }
+  if (req.body.email != null) {
+    res.athlete.email = req.body.email;
+  }
+  if (req.body.phonenumber != null) {
+    res.athlete.phonenumber = req.body.phonenumber;
+  }
+  if (req.body.plan != null) {
+    res.athlete.plan = req.body.plan;
+  }
+  if (req.body.group != null) {
+    res.athlete.group = req.body.group;
+  }
   try {
-    const athlete = await Athlete.findById(id);
-    res.send(athlete);
+    const updatedAthlete = await res.athlete.save();
+    res.redirect(`/athletes`);
   } catch (error) {
-    res.status(404).render("404/index", {
-      title: "Atleta no encontrado",
-      stylesheetPath: "../assets/css/scss/home.css",
-      jsPath: "",
-    });
+    console.log(error);
   }
 };
 
 // DELETE ATHLETE
 const remove = async (req, res) => {
-  const id = req.params.id;
   try {
-    await Athlete.findByIdAndDelete(id);
-    res.json({ redirect: "athletes" });
+    await res.athlete.remove();
+    res.json({ redirect: "/athletes" });
   } catch (error) {
     console.log(error);
   }
 };
+
+// MIDDLEWARE
+async function getAthlete(req, res, next) {
+  let athlete;
+  try {
+    athlete = await Athlete.findById(req.params.id);
+    if (athlete == null) {
+      return res.status(404).render("404/index", {
+        title: "Atleta no encontrado",
+        stylesheetPath: "./assets/css/scss/home.css",
+        jsPath: "",
+      });
+    }
+  } catch (error) {
+    return res.status(404).render("404/index", {
+      title: "Atleta no encontrado",
+      stylesheetPath: "../assets/css/scss/home.css",
+      jsPath: "",
+    });
+  }
+
+  res.athlete = athlete;
+  next();
+}
 
 module.exports = {
   index,
@@ -73,4 +119,6 @@ module.exports = {
   create_post,
   single,
   remove,
+  edit,
+  getAthlete,
 };
