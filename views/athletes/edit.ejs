@@ -6,13 +6,15 @@
       <!-- INTRO -->
       <section class="intro mb-5 d-block d-md-grid">
         <div class="intro__info">
-          <h2 class="intro__title fw-bold mb-4">Añadir Atleta</h2>
+          <h2 class="intro__title fw-bold mb-4">Editar Atleta</h2>
           <p class="intro__description mb-5 mb-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod
             tempor incididunt ut labore et dolore magna aliqu</p>
         </div>
         <div class="intro__button">
-          <a href="/athletes" class="intro__button-link">Todos los Atletas</a>
+          <a data-doc="<%= athlete._id %>" id="delete-athlete" class="intro__button-link delete-athlete">
+            Eliminar Atleta
+          </a>
         </div>
       </section>
 
@@ -20,8 +22,8 @@
 
       <!-- NEW ATHLETE FORM -->
       <section class="new-athletes">
-        <form action="/athletes" method="POST" class="form new-athlete__form" id="new-athlete-form" autocomplete="off">
-          <% if(athlete == null) {const athlete = "" }%> 
+        <form action="/athletes/<%= athlete._id %>?_method=PATCH" method="POST" class="form new-athlete__form"
+          id="new-athlete-form" autocomplete="off">
           <%- include("_formFields") %>
         </form>
       </section>

@@ -12,9 +12,12 @@ router.get("/new", controller.create_get);
 router.post("/", controller.create_post);
 
 // GET SINGLE ATHLETE
-router.get("/:id", controller.single);
+router.get("/:id", controller.getAthlete, controller.single);
+
+// EDIT ATHLETE
+router.patch("/:id", controller.getAthlete, controller.edit);
 
 // DELETE ATHLETE
-router.delete("/:id", controller.remove);
+router.delete("/:id", controller.getAthlete, controller.remove);
 
 module.exports = router;

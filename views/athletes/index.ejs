@@ -70,13 +70,7 @@
                 <div class="athlete__phone"><%= athlete.phonenumber %></div>
                 <div class="athlete__plan"><%= athlete.plan %></div>
                 <div class="athlete__group"><%= athlete.group %></div>
-                <% let createdAt = athlete.createdAt %> 
-                <% createdAt = createdAt.toString(); %> 
-                <% createdAt = createdAt.split(' ') %> 
-                <div class="athlete__date">
-                  <a data-doc="<%= athlete._id %>" id="delete-athlete">
-                    <%= createdAt[2] %>/<%= createdAt[1] %>/<%= createdAt[3] %></div>
-                  </a>
+                <div class="athlete__date"><%= athlete.createdAt.toLocaleDateString() %></div>
               </article>
               <% }); %> 
             </div>
